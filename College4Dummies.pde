@@ -11,7 +11,10 @@ static public PImage gameLogo;
 static public PFont font;
 
 
+
 void setup(){
+    player = new Human("Ben",35,200,200);
+    library = new Button(200,200,200,200,"AOK. Library");
     fullScreen();
     loadAssets(); 
     currentScene = "startup";
@@ -20,7 +23,6 @@ void setup(){
 
 void draw(){
     drawScene(currentScene); 
-
 }
 
 
