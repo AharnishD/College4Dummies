@@ -4,6 +4,7 @@ static public Human player;
 
 static public PImage teamLogo;
 static public PImage gameLogo;
+static public PFont font;
 
 void setup(){
     fullScreen();
@@ -41,4 +42,5 @@ void drawScene(String current){
 void loadAssets(){
     teamLogo = loadImage("teamLogo.png"); 
     gameLogo = loadImage("gameLogo.png");
+    font = createFont("SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf", 48);
 }

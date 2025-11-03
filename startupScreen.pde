@@ -19,8 +19,7 @@ void startUpScreen(){
     
   }else if(startupStage==2){ 
     background(25); 
-    
-    PFont font = createFont("SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf", 48); 
+     
     textFont(font);
     textSize(20);
     fill(150,0,0, textOpacity); 

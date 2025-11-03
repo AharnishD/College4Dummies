@@ -8,11 +8,10 @@ void deathScreen(String message){
     noiseDetail(8, 0.45);
     noStroke(); 
     background(0);  
-
-    PFont font = createFont("SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf", 48); 
+ 
     textFont(font);
     textSize(100);
-    fill(150,0,0);
+    fill(150,0,0); 
     textAlign(CENTER,CENTER);
     text(message, width/2, height/2); 
 
