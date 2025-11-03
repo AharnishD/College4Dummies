@@ -1,26 +1,44 @@
-Human p1;
-Button library;
+static String currentScene;
+
+static public Human player;
+
+static public PImage teamLogo;
+static public PImage gameLogo;
+
 void setup(){
-    size(800,800);
-    p1 = new Human("Sara",18,100,200);
-    library = new Button(200,200,100,100,"library");
+    fullScreen();
+    loadAssets(); 
+    currentScene = "startup";
+
 
 }
 
 void draw(){
-    background(0);
-    library.display();
-    p1.display();
-    p1.move();
+    drawScene(currentScene); 
 
-    //println(p1.getX());
-    //characterOnButton();
 }
 
-/*void characterOnButton(){
-    if(p1.getX() == library.getX() && p1.getY() == library.getY()
-        && p1.getX()+library.w == library.getX()+library.h){
-        println("test");
-    }
-}*/
 
+
+void drawScene(String current){
+
+    switch (current) {
+    case "startup":
+        startUpScreen();
+        break;
+    case "campus":
+        println("Shit not done yet");
+        break;
+    default:
+        println("Something went wrong");
+}
+
+
+}
+
+
+
+void loadAssets(){
+    teamLogo = loadImage("teamLogo.png"); 
+    gameLogo = loadImage("gameLogo.png");
+}
