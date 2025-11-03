@@ -9,16 +9,21 @@ static public PImage teamLogo;
 static public PImage gameLogo;
 static public PFont font;
 
+
 void setup(){
     fullScreen();
     loadAssets(); 
     currentScene = "startup";
-
+    //p1 = new Human("Aharnish",18,200,200);
+    //library = new Button(400,400,100,100,"AOK. Library");
 
 }
 
 void draw(){
     drawScene(currentScene); 
+    //background(0);
+    //p1.display();
+    //library.display();
 
 }
 
@@ -31,7 +36,8 @@ void drawScene(String current){
         startUpScreen();
         break;
     case "dorm":
-        println("Shit not done yet");
+        //println("Shit not done yet");
+        dormRoomScreen();
         break;
     default:
         println("Something went wrong");

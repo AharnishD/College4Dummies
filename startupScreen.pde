@@ -5,7 +5,6 @@ private int startupStage =1;
 private int textOpacity = 0; 
 
 void startUpScreen(){
-  
   if(startupStage==1){
     frameRate(120);
     background(20);
@@ -50,6 +49,7 @@ void startUpScreen(){
     background(20);
     frameRate(60); 
     currentScene = "dorm";
+
   }
   
   
