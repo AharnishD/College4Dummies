@@ -30,7 +30,7 @@ void drawScene(String current){
     case "startup":
         startUpScreen();
         break;
-    case "campus":
+    case "dorm":
         println("Shit not done yet");
         break;
     default:

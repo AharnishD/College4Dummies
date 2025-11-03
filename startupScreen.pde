@@ -49,6 +49,7 @@ void startUpScreen(){
   }else if(startupStage==4){
     background(20);
     frameRate(60); 
+    currentScene = "dorm";
   }
   
   
