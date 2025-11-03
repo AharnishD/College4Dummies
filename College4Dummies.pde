@@ -1,7 +1,10 @@
+//Game state
 static String currentScene;
 
+//Game players
 static public Human player;
 
+//Assets
 static public PImage teamLogo;
 static public PImage gameLogo;
 static public PFont font;

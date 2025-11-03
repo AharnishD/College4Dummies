@@ -27,7 +27,7 @@ void startUpScreen(){
     text("Created By: Nathan, Aharnish, Ben, GT, Shriyans, Eben ", width/2, height/2);
  
     if (textOpacity < 255) {
-      textOpacity += 2;
+      textOpacity += 1.5;
     }else{
       startupStage =3; 
       alpha=0; 
