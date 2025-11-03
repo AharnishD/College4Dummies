@@ -1,8 +1,9 @@
 //Game state
 static String currentScene;
 
-//Game players
+//Game player
 static public Human player;
+
 
 //Assets
 static public PImage teamLogo;
@@ -14,16 +15,11 @@ void setup(){
     fullScreen();
     loadAssets(); 
     currentScene = "startup";
-    //p1 = new Human("Aharnish",18,200,200);
-    //library = new Button(400,400,100,100,"AOK. Library");
 
 }
 
 void draw(){
     drawScene(currentScene); 
-    //background(0);
-    //p1.display();
-    //library.display();
 
 }
 
@@ -36,7 +32,6 @@ void drawScene(String current){
         startUpScreen();
         break;
     case "dorm":
-        //println("Shit not done yet");
         dormRoomScreen();
         break;
     default:
