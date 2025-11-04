@@ -57,7 +57,7 @@ void drawScene(String current){
     case "startup":
         startUpScreen();
         break;
-    case "dorm":
+    case "d":
         campus();
         break;
     default:
