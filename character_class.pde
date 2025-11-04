@@ -67,8 +67,8 @@ void move() {
     if (y < 10) {
       y = 10;
       speak(catchphrase);
-    } else if (y > height - 60) {
-      y = height - 60;
+    } else if (y > height - 150) {
+      y = height - 150;
       speak(catchphrase);
     }
   }
@@ -77,14 +77,4 @@ void move() {
   void speak(String message) {
     println(name + ": " + message);
   }
-
-
-  int getX(){
-    return x;
-  }
-  int getY(){
-    return y;
-  }
-
-
 }

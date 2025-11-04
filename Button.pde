@@ -39,12 +39,5 @@ public class Button {
     boolean isClicked(){
         return isHover() && mousePressed;
     }
-
-    //int getX(){
-       // return x;
-    //}
-    //int getY(){
-       // return y;
-    //}
 }
 
