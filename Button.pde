@@ -17,9 +17,9 @@ public class Button {
     void display(){
         if(isHover()){
             fill(hoverColor);
-            //if(isClicked()){
-                //println("yay");
-            //}
+            if(isClicked()){
+                println("yay");
+            }
         } else {
             fill(baseColor);
         }
