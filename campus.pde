@@ -8,4 +8,7 @@ void campus(){
     Commons.display();
     ILSB.display();
     uniCenter.display();
+    ENGR.display();
+    wellness.display();
+    trueGrits.display();
 }

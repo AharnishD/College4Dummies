@@ -31,11 +31,9 @@ public class Button {
         text(label, x + w/2, y + h/2);
     }
 
-    //boolean isHover(){
-        //return mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h;
-    //}
+
     boolean isHover(){
-        return player.x > x && player.x < x + w && player.y > y && player.y < y + h;
+        return player.x + 50 > x && player.x < x + w && player.y > y - 50 && player.y < y + h;
     }
 
     boolean isClicked(){
