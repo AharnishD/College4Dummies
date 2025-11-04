@@ -46,6 +46,7 @@ void setup(){
 
 void draw(){
     drawScene(currentScene); 
+    drawUI();
 }
 
 
