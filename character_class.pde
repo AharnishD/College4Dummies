@@ -19,7 +19,7 @@ public class Human {
   }
 
   void display() {
-    // Head
+    /*// Head
     fill(255);
     ellipse(x, y, 20, 20);
 
@@ -32,7 +32,14 @@ public class Human {
 
     // Legs
     line(x, y + 40, x - 10, y + 60);
-    line(x, y + 40, x + 10, y + 60);
+    line(x, y + 40, x + 10, y + 60);*/
+
+    
+    image(playerImg, x, y, 80, 80);
+     
+    
+
+
   }
 
 void move() {

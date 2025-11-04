@@ -16,7 +16,9 @@ Button uniCenter;
 //Assets
 static public PImage teamLogo;
 static public PImage gameLogo;
+static public PImage playerImg; 
 static public PFont font;
+
 
 
 
@@ -62,5 +64,6 @@ void drawScene(String current){
 void loadAssets(){
     teamLogo = loadImage("teamLogo.png"); 
     gameLogo = loadImage("gameLogo.png");
+    playerImg = loadImage("playerIMG.png");
     font = createFont("SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf", 48);
 }
