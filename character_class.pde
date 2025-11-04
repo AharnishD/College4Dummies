@@ -67,8 +67,8 @@ void move() {
     if (y < 10) {
       y = 10;
       speak(catchphrase);
-    } else if (y > height - 150) {
-      y = height - 150;
+    } else if (y > height - 200) {
+      y = height - 200;
       speak(catchphrase);
     }
   }
