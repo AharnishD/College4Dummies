@@ -70,8 +70,8 @@ void drawScene(String current){
 
 
 void loadAssets(){
-    teamLogo = loadImage("teamLogo.png"); 
-    gameLogo = loadImage("gameLogo.png");
-    playerImg = loadImage("playerIMG.png");
+    teamLogo = loadImage("Assets/teamLogo.png"); 
+    gameLogo = loadImage("Assets/gameLogo.png");
+    playerImg = loadImage("Assets/playerIMG.png");
     font = createFont("PixelifySans-VariableFont_wght.ttf", 48);
 }
