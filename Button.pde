@@ -27,6 +27,7 @@ public class Button {
 
         fill(textColor);
         textAlign(CENTER, CENTER);
+        textSize(7);
         text(label, x + w/2, y + h/2);
     }
 

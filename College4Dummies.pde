@@ -2,7 +2,15 @@
 static String currentScene;
 
 //Game player
-static public Human player;
+Human player;
+//Location buttons
+Button library;
+Button RAC;
+Button Chesapeake;
+Button Commons; 
+Button ILSB;
+Button uniCenter;
+
 
 
 //Assets
@@ -14,7 +22,13 @@ static public PFont font;
 
 void setup(){
     player = new Human("Ben",35,200,200);
-    library = new Button(200,200,200,200,"AOK. Library");
+    library = new Button(580,340,90,90,"AOK. Library");
+    RAC = new Button(790,800,80,80,"RAC");
+    Chesapeake = new Button(930,240,70,70,"Chesapeake\n Hall");
+    Commons = new Button(700,540,60,60,"The\n Commons");
+    ILSB = new Button(780,630,90,70,"Inter\n Disciplinary\n life sciences\n building");
+    uniCenter = new Button(550,650,73,80,"University\n center");
+
     fullScreen();
     loadAssets(); 
     currentScene = "startup";
@@ -34,7 +48,7 @@ void drawScene(String current){
         startUpScreen();
         break;
     case "dorm":
-        dormRoomScreen();
+        campus();
         break;
     default:
         println("Something went wrong");
