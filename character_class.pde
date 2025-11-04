@@ -48,7 +48,7 @@ void move() {
     }
 
     // Left or right wall
-    if (x < 10) {
+    /*if (x < 10) {
       x = 10;
       speak(catchphrase);
     } else if (x > width - 10) {
@@ -63,7 +63,7 @@ void move() {
     } else if (y > height - 60) {
       y = height - 60;
       speak(catchphrase);
-    }
+    }*/
   }
 }
 
