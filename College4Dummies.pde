@@ -21,7 +21,7 @@ static public PFont font;
 
 
 void setup(){
-    player = new Human("Ben",35,200,200);
+    player = new Human("Sara",35,200,200);
     library = new Button(580,340,90,90,"AOK. Library");
     RAC = new Button(790,800,80,80,"RAC");
     Chesapeake = new Button(930,240,70,70,"Chesapeake\n Hall");
