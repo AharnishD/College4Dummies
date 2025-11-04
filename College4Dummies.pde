@@ -73,5 +73,5 @@ void loadAssets(){
     teamLogo = loadImage("teamLogo.png"); 
     gameLogo = loadImage("gameLogo.png");
     playerImg = loadImage("playerIMG.png");
-    font = createFont("SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf", 48);
+    font = createFont("PixelifySans-VariableFont_wght.ttf", 48);
 }
