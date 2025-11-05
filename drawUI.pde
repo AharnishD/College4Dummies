@@ -2,7 +2,7 @@
 
 void drawUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin"){
-        image(hotBar, 20, height-120, width, 380);
+        //image(hotBar, 15, height-130, width, 450);
     }
     
 }

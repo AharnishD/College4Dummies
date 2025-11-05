@@ -2,6 +2,12 @@
 static String currentScene;
 static int startTime;
 
+//Stats 
+int health;
+int energy;
+int money;
+float grade;
+
 //Game player
 Human player;
 //Location buttons
@@ -74,11 +80,11 @@ void drawScene(String current){
 }
 
 
-
 void loadAssets(){
     teamLogo = loadImage("Assets/teamLogo.png"); 
     gameLogo = loadImage("Assets/gameLogo.png");
     playerImg = loadImage("Assets/playerIMG.png");
-    hotBar = loadImage("Assets/hotBar.png"); 
+    hotBar = loadImage("Assets/HD_HotBar.png"); 
     font = createFont("PixelifySans-VariableFont_wght.ttf", 48);
 }
+
