@@ -1,3 +1,6 @@
+//Pirate Software ahhhhhh code :sob: 
+
+
 //Game state
 static String currentScene;
 static int startTime;
