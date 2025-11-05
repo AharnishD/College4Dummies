@@ -58,12 +58,14 @@ void setup(){
 
 void draw(){
     drawScene(currentScene); 
-    drawUI();
+    //drawUI();
 }
 
 
+private String changeSceneCheck = "nothing rn";
 
 void drawScene(String current){
+
 
     switch (current) {
     case "startup":
@@ -74,7 +76,13 @@ void drawScene(String current){
         break;
     default:
         println("Something went wrong");
-}
+    }
+
+    //This is to check to see if a scene changes. Basicly a change scene listener 
+    if(!(changeSceneCheck.equals(current))){   
+       changeSceneCheck = current;
+       drawUI();
+    }
 
 
 }
