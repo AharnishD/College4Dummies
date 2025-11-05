@@ -1,7 +1,9 @@
 void campus(){
-    safeBackground(); // ask me what this does if u dont undertsand. 
+    safeBackground(); // ask me what this does if u dont undertsand.
+
     player.move();
     player.display();
+
     library.display();
     RAC.display();
     Chesapeake.display();
@@ -11,4 +13,58 @@ void campus(){
     ENGR.display();
     wellness.display();
     trueGrits.display();
+}
+
+
+void library(){
+
+
+}
+
+
+void gym(){
+
+
+}
+
+
+void dorm(){
+
+
+}
+
+
+void commons(){
+
+
+}
+
+
+void classLocation(){
+
+
+}
+
+
+void uniCenter(){
+
+
+}
+
+
+void disc(){
+
+
+}
+
+
+void wellness(){
+
+
+}
+
+
+void trueGrits(){
+
+
 }
