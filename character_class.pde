@@ -3,7 +3,6 @@ public class Human {
   int age;
   int x, y;
   color shirtColor;
-  String catchphrase;
 
   // Arm animation variables (optional for future use)
   int armOffset = 0;
@@ -15,7 +14,6 @@ public class Human {
     this.x = x;
     this.y = y;
     shirtColor = color(255);
-    catchphrase = "I LOVE AHARNISH SOOO MUCH";
   }
 
   void display() {
@@ -57,24 +55,17 @@ void move() {
     // Left or right wall
     if (x < 10) {
       x = 10;
-      speak(catchphrase);
     } else if (x > width - 10) {
       x = width - 10;
-      speak(catchphrase);
     }
 
     // Top or bottom wall
     if (y < 10) {
       y = 10;
-      speak(catchphrase);
     } else if (y > height - 200) {
       y = height - 200;
-      speak(catchphrase);
     }
   }
 }
 
-  void speak(String message) {
-    println(name + ": " + message);
-  }
 }
