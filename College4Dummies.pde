@@ -74,8 +74,11 @@ void drawScene(String current){
     case "startup":
         startUpScreen();
         break;
-    case "dorm":
+    case "campus":
         campus();
+        break;
+    case "library":
+        library();
         break;
     default:
         println("Something went wrong");

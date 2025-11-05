@@ -20,12 +20,13 @@ public class Button {
     void display(){
         if(isHover()){
             fill(hoverColor);
-            //textSize(205);
+            textSize(20);
             label = "enter";
             if(isClicked()){
-                println("yay");
+                library();
             }
         } else {
+            textSize(10);
             label = ogLabel;
             fill(baseColor);
         }
@@ -34,7 +35,7 @@ public class Button {
 
         fill(textColor);
         textAlign(CENTER, CENTER);
-        textSize(7);
+        //textSize(7);
         text(label, x + w/2, y + h/2);
     }
 

@@ -53,6 +53,6 @@ void startUpScreen(){
     }
   }else if(startupStage==4){
     background(20); 
-    currentScene = "dorm";
+    currentScene = "campus";
   }
 }

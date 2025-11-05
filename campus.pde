@@ -13,12 +13,12 @@ void campus(){
     ENGR.display();
     wellness.display();
     trueGrits.display();
+    //safeBackground();
 }
 
 
 void library(){
-
-
+    background(0);
 }
 
 
