@@ -23,6 +23,7 @@ public class Button {
             textSize(20);
             label = "enter";
             if(isClicked()){
+                
                 library();
             }
         } else {

@@ -5,6 +5,7 @@ void campus(){
     player.display();
 
     library.display();
+
     RAC.display();
     Chesapeake.display();
     Commons.display();
@@ -14,12 +15,13 @@ void campus(){
     wellness.display();
     trueGrits.display();
     //safeBackground();
+
 }
 
 
 void library(){
     //safeBackground();
-    background(0);
+    //background(0);
     drawUI();
 }
 

@@ -54,7 +54,8 @@ void startUpScreen(){
   }else if(startupStage==4){
     background(20); 
     currentScene = "campus";
-  }else if(startupStage == 4){
+    startupStage = 5;
+  }else if(startupStage == 5){
     currentScene = "library";
   }
 }
