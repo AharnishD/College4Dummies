@@ -1,5 +1,6 @@
 //Game state
 static String currentScene;
+static int startTime;
 
 //Game player
 Human player;
@@ -20,12 +21,17 @@ Button trueGrits;
 static public PImage teamLogo;
 static public PImage gameLogo;
 static public PImage playerImg; 
+static public PImage hotBar; 
 static public PFont font;
 
 
 
 
 void setup(){
+
+    //This NEEDS to be first
+    startTime = millis();
+
     player = new Human("Sara",35,200,200);
 
     library = new Button(int(width/3),int(height/6.0),90,90,"AOK. Library");
@@ -73,5 +79,6 @@ void loadAssets(){
     teamLogo = loadImage("Assets/teamLogo.png"); 
     gameLogo = loadImage("Assets/gameLogo.png");
     playerImg = loadImage("Assets/playerIMG.png");
+    hotBar = loadImage("Assets/hotBar.png"); 
     font = createFont("PixelifySans-VariableFont_wght.ttf", 48);
 }

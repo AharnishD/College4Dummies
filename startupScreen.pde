@@ -3,17 +3,21 @@
 private int alpha = 0;
 private int startupStage =1; 
 private int textOpacity = 0; 
+private int timer;
 
 void startUpScreen(){
+
+  timer = millis() - startTime;
+
   if(startupStage==1){
-    frameRate(120);
-    background(20);
+    background(20); 
     tint(255, alpha);
     image(teamLogo, (width/2)-225, (height/2)-225, 450, 450);
  
    if (alpha < 255) {
      alpha += 10; 
-   }else{
+   }
+   if(timer/1000 == 5){
       startupStage =2;
    }
       
@@ -29,7 +33,8 @@ void startUpScreen(){
  
     if (textOpacity < 255) {
       textOpacity += 1.5;
-    }else{
+    }
+    if(timer/1000 == 10){
       startupStage =3; 
       alpha=0; 
     }
@@ -42,12 +47,12 @@ void startUpScreen(){
     
     if (alpha < 255) {
      alpha +=10;  
-     }else{
+    }
+    if(timer/1000 == 15){
       startupStage =4;
     }
   }else if(startupStage==4){
-    background(20);
-    frameRate(60); 
+    background(20); 
     currentScene = "dorm";
 
   }
