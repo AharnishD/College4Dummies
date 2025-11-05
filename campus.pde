@@ -18,7 +18,9 @@ void campus(){
 
 
 void library(){
+    //safeBackground();
     background(0);
+    drawUI();
 }
 
 
