@@ -29,7 +29,7 @@ void startUpScreen(){
     textSize(20);
     fill(150,0,0, textOpacity); 
     textAlign(CENTER,CENTER); 
-    text("Created By: Nathan, Aharnish, Ben, GT, Shriyans, Eben ", width/2, height/2);
+    text("Created for COMP 101 by: Aharnish, Nathan, Ben, GT, Shriyans, Eben.", width/2, height/2);
  
     if (textOpacity < 255) {
       textOpacity += 1.5;
