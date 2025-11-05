@@ -1,5 +1,5 @@
 void campus(){
-    background(0);
+    safeBackground(); // ask me what this does if u dont undertsand. 
     player.move();
     player.display();
     library.display();

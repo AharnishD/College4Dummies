@@ -81,6 +81,7 @@ void drawScene(String current){
     //This is to check to see if a scene changes. Basicly a change scene listener 
     if(!(changeSceneCheck.equals(current))){   
        changeSceneCheck = current;
+       background(0);
        drawUI();
     }
 
@@ -96,3 +97,8 @@ void loadAssets(){
     font = createFont("PixelifySans-VariableFont_wght.ttf", 48);
 }
 
+//stes a scenes GB without covering up UI etc 
+void safeBackground(){
+    fill(0);
+    rect(0,0,width,height-130);
+}
