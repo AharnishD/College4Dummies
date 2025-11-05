@@ -3,6 +3,7 @@ public class Human {
   int age;
   int x, y;
   color shirtColor;
+  boolean playerLookDir = true;  // true = right, false = left 
 
   // Arm animation variables (optional for future use)
   int armOffset = 0;
@@ -32,8 +33,14 @@ public class Human {
     line(x, y + 40, x - 10, y + 60);
     line(x, y + 40, x + 10, y + 60);*/
 
+    //TODO: BROKEN 
+    //if(playerLookDir == true){
+      image(playerImg, x, y, 80, 80);
+    //}else{
+    //  scale(-1, 1);
+    //  image(playerImg, x-80, y, 80, 80);
+    //}
     
-    image(playerImg, x, y, 80, 80);
      
     
 
@@ -43,8 +50,10 @@ public class Human {
 void move() {
   if (keyPressed) {
     if (keyCode == LEFT) {
+      playerLookDir = false;
       x -= 5;
     } else if (keyCode == RIGHT) {
+      playerLookDir = true;
       x += 5;
     } else if (keyCode == UP) {
       y -= 5;
