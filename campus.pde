@@ -4,22 +4,50 @@ void campus(){
     player.move();
     player.display();
 
-    library.display();
-
     if(library.isClicked()){
         currentScene = "library";
     }
+    library.display();
+
     if(RAC.isClicked()){
         currentScene = "RAC";
     }
-
     RAC.display();
+
+    if(Chesapeake.isClicked()){
+        currentScene = "RAC";
+    }
     Chesapeake.display();
+
+
+    if(Commons.isClicked()){
+        currentScene = "RAC";
+    }    
     Commons.display();
+    
+    if(ILSB.isClicked()){
+        currentScene = "RAC";
+    }
     ILSB.display();
+
+    if(uniCenter.isClicked()){
+        currentScene = "RAC";
+    }
     uniCenter.display();
+
+    if(ENGR.isClicked()){
+        currentScene = "RAC";
+    }
     ENGR.display();
+
+    if(wellness.isClicked()){
+        currentScene = "RAC";
+    }
     wellness.display();
+
+    if(trueGrits                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         .isClicked()){
+        currentScene = "RAC";
+    }
     trueGrits.display();
 }
 
