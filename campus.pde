@@ -6,37 +6,44 @@ void campus(){
 
     if(library.isClicked()){
         currentScene = "library";
+        returnToCampus.display();
     }
     library.display();
 
     if(RAC.isClicked()){
         currentScene = "RAC";
+        returnToCampus.display();
     }
     RAC.display();
 
     if(Chesapeake.isClicked()){
         currentScene = "RAC";
+        returnToCampus.display();
     }
     Chesapeake.display();
 
 
     if(Commons.isClicked()){
         currentScene = "RAC";
+        returnToCampus.display();
     }    
     Commons.display();
     
     if(ILSB.isClicked()){
         currentScene = "RAC";
+        returnToCampus.display();
     }
     ILSB.display();
 
     if(uniCenter.isClicked()){
         currentScene = "RAC";
+        returnToCampus.display();
     }
     uniCenter.display();
 
     if(ENGR.isClicked()){
         currentScene = "RAC";
+        returnToCampus.display();
     }
     ENGR.display();
 

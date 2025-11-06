@@ -21,6 +21,7 @@ Button uniCenter;
 Button ENGR;
 Button wellness;
 Button trueGrits;
+Button returnToCampus;
 
 
 
@@ -50,6 +51,7 @@ void setup(){
     ENGR = new Button(int(width/7),int(height/2.0),80,80,"Engineering");
     wellness = new Button(int(width/1.5),int(height/3.7),70,50,"wellness\n center");
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
+    returnToCampus = new Button(int(width/3),height,90,90,"Return");
 
     fullScreen();
     loadAssets(); 
