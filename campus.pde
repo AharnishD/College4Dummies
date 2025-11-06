@@ -6,6 +6,13 @@ void campus(){
 
     library.display();
 
+    if(library.isClicked()){
+        currentScene = "library";
+    }
+    if(RAC.isClicked()){
+        currentScene = "RAC";
+    }
+
     RAC.display();
     Chesapeake.display();
     Commons.display();
@@ -19,6 +26,10 @@ void campus(){
 
 void library(){
     safeBackground();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to the livrartyy", width/2,height/2);
 }
 
 

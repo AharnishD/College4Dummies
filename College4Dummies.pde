@@ -1,5 +1,5 @@
 //Pirate Software ahhhhhh code :sob: 
-
+boolean mouseWasPressed = false;
 
 //Game state
 static String currentScene;
@@ -61,6 +61,7 @@ void setup(){
 
 void draw(){
     drawScene(currentScene); 
+    mouseWasPressed = mousePressed;
 }
 
 
@@ -75,6 +76,9 @@ void drawScene(String current){
         break;
     case "campus":
         campus();
+        break;
+    case "library":
+        library();
         break;
     default:
         println("Something went wrong");
