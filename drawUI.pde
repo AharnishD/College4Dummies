@@ -9,7 +9,8 @@ void drawUI(){
 }
 
 void updateUI(){
-
+    SetUIText();
+    progressBarsUI(); 
 }
 
 void SetUIText(){
@@ -18,4 +19,9 @@ void SetUIText(){
     text("Health", 85, height-90);
     fill(150,150,0);
     text("Energy", 85, height-55);
+}
+
+
+void progressBarsUI(){
+    
 }

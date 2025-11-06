@@ -66,6 +66,7 @@ private String changeSceneCheck = "nothing rn";
 
 void drawScene(String current){
 
+    updateUI();
 
     switch (current) {
     case "startup":
