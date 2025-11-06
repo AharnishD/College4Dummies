@@ -80,6 +80,11 @@ void drawScene(String current){
     case "library":
         library();
         break;
+    case "miniGame":
+        playArea();
+        greenBar();
+        sweeper();
+        break;
     default:
         println("Something went wrong");
     }
