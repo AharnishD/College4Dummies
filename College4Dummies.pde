@@ -1,6 +1,4 @@
 //Pirate Software ahhhhhh code :sob: 
-boolean mouseWasPressed = false;
-
 //Game state
 static String currentScene;
 static int startTime;
@@ -61,7 +59,6 @@ void setup(){
 
 void draw(){
     drawScene(currentScene); 
-    mouseWasPressed = mousePressed;
 }
 
 

@@ -45,6 +45,6 @@ public class Button {
 
 
     boolean isClicked(){
-        return isHover() && mousePressed && !mouseWasPressed;
+        return isHover() && mousePressed;
     }
 }
