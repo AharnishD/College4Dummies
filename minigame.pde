@@ -6,31 +6,18 @@ final int SWEEPER_THICKNESS = 4;  // 4 pixle wide line
 final int speed = 5;       // for speed of black bar
 final int MARGIN = 20;     // Arena margin
 
-// 
 int successes = 0;      // track successful hits so far
 
 int gWidth = ORIGINAL_WIDTH;   // Green target width
 int gStart;                    // Left X position of Green target
 
-int arenaMin;                  // left bound of red 
-int arenaMax ;                 // right bound of red
+int arenaMin = MARGIN;                  // left bound of red 
+int arenaMax = width - MARGIN;             // right bound of red
 
 int lineX =  arenaMin + 2;     // sweeper x position
 boolean movingRight = true;    // sweeper direction
 
 
-//void setup(){
-  
-  //size(1000,300);
-
- // seting bounds that allow for variable size
-   // arenaMin = MARGIN;
-  //  arenaMax = width - MARGIN;
-
-    
-//gStart = int(random(arenaMin, arenaMax - gWidth));   // makes a random position for green bar along the red bar
- //inDaGreen();
-//}
  
 
 void inDaGreen(){

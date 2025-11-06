@@ -94,6 +94,16 @@ void drawScene(String current){
        changeSceneCheck = current;
        background(0);
        drawUI();
+
+       switch (current) {
+        case "miniGame":
+            inDaGreen(); 
+            gStart = int(random(arenaMin, arenaMax - gWidth));
+            break;
+        default:
+            println("Something went wrong");
+        }
+
     }
 
 
