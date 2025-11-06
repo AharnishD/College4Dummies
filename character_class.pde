@@ -18,33 +18,7 @@ public class Human {
   }
 
   void display() {
-    /*// Head
-    fill(255);
-    ellipse(x, y, 20, 20);
-
-    // Body
-    stroke(shirtColor);
-    line(x, y + 10, x, y + 40);
-
-    // Arms
-    line(x - 10, y + 20, x + 10, y + 20);
-
-    // Legs
-    line(x, y + 40, x - 10, y + 60);
-    line(x, y + 40, x + 10, y + 60);*/
-
-    //TODO: BROKEN 
-    //if(playerLookDir == true){
-      image(playerImg, x, y, 80, 80);
-    //}else{
-    //  scale(-1, 1);
-    //  image(playerImg, x-80, y, 80, 80);
-    //}
-    
-     
-    
-
-
+    image(playerImg, x, y, 80, 80);
   }
 
 void move() {

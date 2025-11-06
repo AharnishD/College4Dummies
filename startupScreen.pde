@@ -49,13 +49,10 @@ void startUpScreen(){
      alpha +=10;  
     }
     if(timer/1000 == 15){
-      startupStage =4;
+      startupStage = 4;
     }
   }else if(startupStage==4){
     background(20); 
     currentScene = "campus";
-    startupStage = 5;
-  }else if(startupStage == 5){
-    currentScene = "library";
   }
 }

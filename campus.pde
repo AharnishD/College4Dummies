@@ -14,16 +14,13 @@ void campus(){
     ENGR.display();
     wellness.display();
     trueGrits.display();
-    //safeBackground();
-
 }
 
 
 void library(){
-    //safeBackground();
-    //background(0);
-    drawUI();
+    safeBackground();
 }
+
 
 
 void gym(){

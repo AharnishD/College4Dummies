@@ -61,7 +61,6 @@ void setup(){
 
 void draw(){
     drawScene(currentScene); 
-    //drawUI();
 }
 
 
@@ -76,9 +75,6 @@ void drawScene(String current){
         break;
     case "campus":
         campus();
-        break;
-    case "library":
-        library();
         break;
     default:
         println("Something went wrong");
