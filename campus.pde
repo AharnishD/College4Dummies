@@ -6,6 +6,7 @@ void campus(){
 
     if(library.isClicked()){
         currentScene = "library";
+
         returnToCampus.display();
     }
     library.display();
@@ -59,8 +60,9 @@ void campus(){
 }
 
 
-void library(){
+void libraryBackground(){
     safeBackground();
+    background(libraryBackground);
     textAlign(CENTER,CENTER);
     textSize(30);
     fill(255);

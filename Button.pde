@@ -22,9 +22,6 @@ public class Button {
             fill(hoverColor);
             textSize(20);
             label = "enter";
-            if(isClicked()){
-                library();
-            }
         } else {
             textSize(10);
             label = ogLabel;

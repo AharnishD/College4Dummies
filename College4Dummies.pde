@@ -31,6 +31,7 @@ static public PImage gameLogo;
 static public PImage playerImg; 
 static public PImage hotBar; 
 static public PFont font;
+static public PImage libraryBackground;
 
 
 
@@ -78,15 +79,15 @@ void drawScene(String current){
         campus();
         break;
     case "library":
-        library();
+        libraryBackground();
         break;
-    case "miniGame":
+    /*case "miniGame":
         playArea();
         greenBar();
         sweeper();
-        break;
-    default:
-        println("Something went wrong");
+        break;*/
+    //default:
+        //println("Something went wrong");
     }
 
     //This is to check to see if a scene changes. Basicly a change scene listener 
@@ -95,14 +96,14 @@ void drawScene(String current){
        background(0);
        drawUI();
 
-       switch (current) {
-        case "miniGame":
-            inDaGreen(); 
-            gStart = int(random(arenaMin, arenaMax - gWidth));
-            break;
-        default:
-            println("Something went wrong");
-        }
+       //switch (current) {
+        //case "miniGame":
+            //inDaGreen(); 
+            //gStart = int(random(arenaMin, arenaMax - gWidth));
+            //break;
+        //default:
+            //println("Something went wrong");
+        //}
 
     }
 
@@ -116,6 +117,7 @@ void loadAssets(){
     playerImg = loadImage("Assets/playerIMG.png");
     hotBar = loadImage("Assets/HD_HotBar.png"); 
     font = createFont("PixelifySans-VariableFont_wght.ttf", 48);
+    libraryBackground = loadImage("Assets/libraryBackground.png");
 }
 
 //stes a scenes GB without covering up UI etc 

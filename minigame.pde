@@ -1,6 +1,6 @@
 
 //  CONSTANTS
-final int ORIGINAL_WIDTH = 120;
+/*final int ORIGINAL_WIDTH = 120;
 final int MIN_WIDTH = 8;          // Smallest possible target
 final int SWEEPER_THICKNESS = 4;  // 4 pixle wide line
 final int speed = 5;       // for speed of black bar
@@ -89,4 +89,4 @@ void keyPressed(){
         }
       }
   }
-}
+}*/
