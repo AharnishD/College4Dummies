@@ -2,12 +2,10 @@ void campus(){
     safeBackground(); // ask me what this does if u dont undertsand.
 
     player.move();
-    player.display();
+    player.displayPlayer();
 
     if(library.isClicked()){
         currentScene = "library";
-
-        returnToCampus.display();
     }
     library.display();
 
@@ -62,11 +60,13 @@ void campus(){
 
 void libraryBackground(){
     safeBackground();
-    background(libraryBackground);
+    player.displayPlayer();
+    player.move();
     textAlign(CENTER,CENTER);
     textSize(30);
     fill(255);
     text("Welcome to the livrartyy", width/2,height/2);
+    returnToCampus.display();
 }
 
 
@@ -116,4 +116,8 @@ void wellness(){
 void trueGrits(){
 
 
+}
+
+void exit(){
+    campus();
 }

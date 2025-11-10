@@ -17,7 +17,7 @@ public class Human {
     shirtColor = color(255);
   }
 
-  void display() {
+  void displayPlayer() {
     image(playerImg, x, y, 80, 80);
   }
 

@@ -31,7 +31,6 @@ static public PImage gameLogo;
 static public PImage playerImg; 
 static public PImage hotBar; 
 static public PFont font;
-static public PImage libraryBackground;
 
 
 
@@ -52,12 +51,12 @@ void setup(){
     ENGR = new Button(int(width/7),int(height/2.0),80,80,"Engineering");
     wellness = new Button(int(width/1.5),int(height/3.7),70,50,"wellness\n center");
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
-    returnToCampus = new Button(int(width/3),height,90,90,"Return");
+    returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
+
 
     fullScreen();
     loadAssets(); 
     currentScene = "startup";
-
 }
 
 void draw(){
@@ -80,6 +79,10 @@ void drawScene(String current){
         break;
     case "library":
         libraryBackground();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+            println("working");
+        }
         break;
     /*case "miniGame":
         playArea();
@@ -117,7 +120,6 @@ void loadAssets(){
     playerImg = loadImage("Assets/playerIMG.png");
     hotBar = loadImage("Assets/HD_HotBar.png"); 
     font = createFont("PixelifySans-VariableFont_wght.ttf", 48);
-    libraryBackground = loadImage("Assets/libraryBackground.png");
 }
 
 //stes a scenes GB without covering up UI etc 
