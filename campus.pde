@@ -11,48 +11,47 @@ void campus(){
 
     if(RAC.isClicked()){
         currentScene = "RAC";
-        returnToCampus.display();
     }
     RAC.display();
 
     if(Chesapeake.isClicked()){
-        currentScene = "RAC";
+        currentScene = "dorm";
         returnToCampus.display();
     }
     Chesapeake.display();
 
 
     if(Commons.isClicked()){
-        currentScene = "RAC";
+        currentScene = "commons";
         returnToCampus.display();
     }    
     Commons.display();
     
     if(ILSB.isClicked()){
-        currentScene = "RAC";
+        currentScene = "classLocation";
         returnToCampus.display();
     }
     ILSB.display();
 
     if(uniCenter.isClicked()){
-        currentScene = "RAC";
+        currentScene = "unicenter";
         returnToCampus.display();
     }
     uniCenter.display();
 
     if(ENGR.isClicked()){
-        currentScene = "RAC";
+        currentScene = "ENGR";
         returnToCampus.display();
     }
     ENGR.display();
 
     if(wellness.isClicked()){
-        currentScene = "RAC";
+        currentScene = "wellness";
     }
     wellness.display();
 
     if(trueGrits                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         .isClicked()){
-        currentScene = "RAC";
+        currentScene = "diningHall";
     }
     trueGrits.display();
 }
@@ -72,52 +71,100 @@ void libraryBackground(){
 
 
 void gym(){
-
-
+    safeBackground();
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to the gym", width/2,height/2);
+    returnToCampus.display();
 }
 
 
 void dorm(){
-
-
+    safeBackground();
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to your dorm", width/2,height/2);
+    returnToCampus.display();
 }
 
 
 void commons(){
-
-
+    safeBackground();
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to the commons", width/2,height/2);
+    returnToCampus.display();
 }
 
 
 void classLocation(){
-
+    safeBackground();
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to the Comp101", width/2,height/2);
+    returnToCampus.display();
 
 }
 
 
 void uniCenter(){
-
-
+    safeBackground();
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to the uni center", width/2,height/2);
+    returnToCampus.display();
 }
 
 
 void disc(){
-
+    safeBackground();
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to the your discussion", width/2,height/2);
+    returnToCampus.display();
 
 }
 
 
 void wellness(){
-
+    safeBackground();
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to the wellness center", width/2,height/2);
+    returnToCampus.display();
 
 }
 
 
 void trueGrits(){
-
-
+    safeBackground();
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textSize(30);
+    fill(255);
+    text("Welcome to the dining hall", width/2,height/2);
+    returnToCampus.display();
 }
 
-void exit(){
-    campus();
-}

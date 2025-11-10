@@ -81,9 +81,49 @@ void drawScene(String current){
         libraryBackground();
         if(returnToCampus.isClicked()){
             currentScene = "campus";
-            println("working");
         }
         break;
+    case "RAC":
+        gym();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+        }
+        break;
+    case "dorm":
+        dorm();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+        }
+    case "commons":
+        commons();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+        }
+    case "classLocation":
+        classLocation();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+        }
+    case "uniCenter":
+        uniCenter();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+        }
+    case "ENGR":
+        disc();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+        }
+    case "wellness":
+        wellness();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+        }
+    case "trueGrits":
+        trueGrits();
+        if(returnToCampus.isClicked()){
+            currentScene = "campus";
+        }
     /*case "miniGame":
         playArea();
         greenBar();
