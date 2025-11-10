@@ -64,7 +64,7 @@ void draw(){
 }
 
 
-private String changeSceneCheck = "nothing rn";
+private String changeSceneCheck = "suck me balls";
 
 void drawScene(String current){
 
@@ -129,8 +129,8 @@ void drawScene(String current){
         greenBar();
         sweeper();
         break;*/
-    //default:
-        //println("Something went wrong");
+    default:
+        println("Something went wrong");
     }
 
     //This is to check to see if a scene changes. Basicly a change scene listener 
@@ -150,6 +150,9 @@ void drawScene(String current){
 
     }
 
+}
+
+void keyPressed(){
 
 }
 
