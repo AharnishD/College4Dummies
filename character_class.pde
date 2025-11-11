@@ -38,8 +38,8 @@ void move() {
     // Left or right wall
     if (x < 10) {
       x = 10;
-    } else if (x > width - 10) {
-      x = width - 10;
+    } else if (x > width - 80) {
+      x = width - 80;
     }
 
     // Top or bottom wall
