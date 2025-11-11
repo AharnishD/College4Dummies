@@ -53,7 +53,7 @@ void setup(){
     wellness = new Button(int(width/1.5),int(height/3.7),70,50,"wellness\n center");
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
     returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
-    start = new Button(int(width/2-45),height-200,90,90,"Start");
+    start = new Button(int(width/2-45),height-300,90,90,"Start");
 
 
     fullScreen();
@@ -103,36 +103,43 @@ void drawScene(String current){
         if(returnToCampus.isClicked()){
             currentScene = "campus";
         }
+        break;
     case "commons":
         commons();
         if(returnToCampus.isClicked()){
             currentScene = "campus";
         }
+        break;
     case "classLocation":
         classLocation();
         if(returnToCampus.isClicked()){
             currentScene = "campus";
         }
+        break;
     case "uniCenter":
         uniCenter();
         if(returnToCampus.isClicked()){
             currentScene = "campus";
         }
+        break;
     case "ENGR":
         disc();
         if(returnToCampus.isClicked()){
             currentScene = "campus";
         }
+        break;
     case "wellness":
         wellness();
         if(returnToCampus.isClicked()){
             currentScene = "campus";
         }
+        break;
     case "trueGrits":
         trueGrits();
         if(returnToCampus.isClicked()){
             currentScene = "campus";
         }
+        break;
     /*case "miniGame":
         playArea();
         greenBar();
