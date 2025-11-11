@@ -22,6 +22,7 @@ Button ENGR;
 Button wellness;
 Button trueGrits;
 Button returnToCampus;
+Button start;
 
 
 
@@ -52,6 +53,7 @@ void setup(){
     wellness = new Button(int(width/1.5),int(height/3.7),70,50,"wellness\n center");
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
     returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
+    start = new Button(int(width/2-45),height-200,90,90,"Start");
 
 
     fullScreen();
@@ -60,6 +62,7 @@ void setup(){
 }
 
 void draw(){
+    println(frameRate);
     drawScene(currentScene); 
 }
 
@@ -73,6 +76,12 @@ void drawScene(String current){
     switch (current) {
     case "startup":
         startUpScreen();
+        break;
+    case "directions":
+        directions();
+        if(start.isClicked()){
+            currentScene = "dorm";
+        }
         break;
     case "campus":
         campus();
@@ -130,7 +139,7 @@ void drawScene(String current){
         sweeper();
         break;*/
     default:
-        println("Something went wrong");
+
     }
 
     /*This is to check to see if a scene changes. Basicly a change scene listener.
@@ -149,7 +158,6 @@ void drawScene(String current){
             //gStart = int(random(arenaMin, arenaMax - gWidth));
             break;
         default:
-            println("If you see this, something is really wrong!");
             //This should never show.
         }
 

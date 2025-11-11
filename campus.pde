@@ -168,3 +168,20 @@ void trueGrits(){
     returnToCampus.display();
 }
 
+String directions = "Use [W] [A] [S] [D] and the [ARROW] keys to move around.\nMove your player to a location and click [SPACE] to enter.\nIn each location you can chose an option to change your stats.\nStsts are Health, Energy, Money, and Grade.\nThere are random \"chalenges\" that you need to randomly compleate.\nyou need to survie 15 weeks, if any stats hits 0..."; 
+
+void directions(){
+    background(0);
+    player.displayPlayer();
+    player.move();
+    textAlign(CENTER,CENTER);
+    textFont(font);
+    textSize(30);
+    fill(255);
+    text(directions, width/2, 170);
+    textSize(60);
+    fill(100,0,0);
+    text("You Fail", width/2, 300); 
+    start.display();
+}
+

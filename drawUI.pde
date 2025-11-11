@@ -1,7 +1,7 @@
 
 
 void drawUI(){
-    if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin"){
+    if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions"){
         image(hotBar, 15, height-130, width, 450); 
         SetUIText();
     }
@@ -9,8 +9,10 @@ void drawUI(){
 }
 
 void updateUI(){
-    SetUIText();
-    progressBarsUI(); 
+    if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions"){
+        SetUIText();
+        progressBarsUI();
+    } 
 }
 
 void SetUIText(){
