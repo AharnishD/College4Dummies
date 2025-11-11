@@ -11,7 +11,7 @@ float grade;
 
 //Game player
 Human player;
-//Location buttons
+//Building Location Buttons
 Button library;
 Button RAC;
 Button Chesapeake;
