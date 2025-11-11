@@ -133,20 +133,25 @@ void drawScene(String current){
         println("Something went wrong");
     }
 
-    //This is to check to see if a scene changes. Basicly a change scene listener 
+    /*This is to check to see if a scene changes. Basicly a change scene listener.
+    Every frame, it will check to see if the scene string name is equal to the current svaed one,
+    if its difrent, it will trigger the one time setup calls for whatever is the new scene
+    to prevent lag. This is calls such as loading assets and graphics*/ 
     if(!(changeSceneCheck.equals(current))){   
        changeSceneCheck = current;
        background(0);
        drawUI();
 
-       //switch (current) {
-        //case "miniGame":
+       switch (current) {
+        case "miniGame":
+            //TODO: Fix!
             //inDaGreen(); 
             //gStart = int(random(arenaMin, arenaMax - gWidth));
-            //break;
-        //default:
-            //println("Something went wrong");
-        //}
+            break;
+        default:
+            println("If you see this, something is really wrong!");
+            //This should never show.
+        }
 
     }
 
