@@ -23,15 +23,15 @@ public class Human {
 
 void move() {
   if (keyPressed) {
-    if (keyCode == LEFT) {
+    if (keyCode == LEFT || key == 'a') {
       playerLookDir = false;
       x -= 5;
-    } else if (keyCode == RIGHT) {
+    } else if (keyCode == RIGHT || key == 'd') {
       playerLookDir = true;
       x += 5;
-    } else if (keyCode == UP) {
+    } else if (keyCode == UP || key == 'w') {
       y -= 5;
-    } else if (keyCode == DOWN) {
+    } else if (keyCode == DOWN || key == 's') {
       y += 5;
     }
 
