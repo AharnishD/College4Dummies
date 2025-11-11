@@ -45,8 +45,8 @@ void move() {
     // Top or bottom wall
     if (y < 10) {
       y = 10;
-    } else if (y > height - 200) {
-      y = height - 200;
+    } else if (y > height - 230) {
+      y = height - 230;
     }
   }
 }
