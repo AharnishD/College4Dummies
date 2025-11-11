@@ -40,7 +40,7 @@ void campus(){
     uniCenter.display();
 
     if(ENGR.isClicked()){
-        currentScene = "ENGR";
+        currentScene = "engeneering";
         returnToCampus.display();
     }
     ENGR.display();
@@ -51,7 +51,7 @@ void campus(){
     wellness.display();
 
     if(trueGrits                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         .isClicked()){
-        currentScene = "diningHall";
+        currentScene = "trueGrits";
     }
     trueGrits.display();
 }

@@ -116,7 +116,7 @@ void drawScene(String current){
             currentScene = "campus";
         }
         break;
-    case "ENGR":
+    case "engeneering":
         engineering();
         if(returnToCampus.isClicked()){
             currentScene = "campus";
