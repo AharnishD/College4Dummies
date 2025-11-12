@@ -5,25 +5,23 @@ public class PlayerStatBar{
     float value;
     color colorFull;
     color colorEmpty;
-    int x;
     int y;
 
 
-    public PlayerStatBar (int initXLoc, int initYLoc, float initValue, color initColorFull){
+    public PlayerStatBar (int initYLoc, float initValue, color initColorFull){
         this.value = initValue;
         this.colorFull = initColorFull;
         this.colorEmpty = color(100,0,0);
-        this.x = initXLoc;
         this.y = initYLoc;
     }
 
     void drawBar(float value){
-        rectMode(CORNER);
-        noStroke();    
-        fill(colorFull); 
-        rect(x, y, barLength/value, 30); 
+        float redBarSize = barLength;
         fill(colorEmpty); 
-        rect(x+barLength/value, y, barLength - barLength/value, 30);
+        rect(width/8, y, redBarSize, 30);
+
+        fill(colorFull); 
+        rect(width/8, y,value, 30); 
     }
 
 }

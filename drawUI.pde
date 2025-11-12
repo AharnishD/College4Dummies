@@ -12,6 +12,7 @@ void updateUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions"){
         SetUIText();
         happinessBar.drawBar(happiness); 
+        energyBar.drawBar(energy);
     } 
 }
 
