@@ -5,7 +5,7 @@ static int week = 1;
 int sec;
 
 //Stats 
-int happiness;
+int happiness = 30;
 int energy;
 int money;
 float grade;
@@ -24,6 +24,10 @@ Button wellness;
 Button trueGrits;
 Button returnToCampus;
 Button start;
+
+//Stats bars 
+PlayerStatBar happinessBar = new PlayerStatBar(150, height-90, happiness, color(0,100,0), color(100,0,0));
+
 
 //Assets
 static public PImage teamLogo;
