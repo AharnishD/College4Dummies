@@ -5,7 +5,7 @@ static int week = 1;
 int sec;
 
 //Stats 
-int health;
+int happiness;
 int energy;
 int money;
 float grade;

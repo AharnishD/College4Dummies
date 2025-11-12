@@ -21,12 +21,17 @@ void updateUI(){
 void SetUIText(){
     textSize(30);
     fill(0,150,0);
-    text("Health", 85, height-90);
+    text("Happiness", 108, height-90);
     fill(150,150,0);
     text("Energy", 85, height-55);
 }
 
 
 void progressBarsUI(){
+    happiness = 20;
+    rect(185, height-101,happiness,20);
+    //if ate increase happiness
+    //if you got a good test increase happiness
+    //if you slept increase happiness a little
     
 }
