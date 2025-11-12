@@ -5,7 +5,7 @@ static int week = 1;
 int sec;
 
 //Stats 
-int happiness = 30;
+float happiness = 30;
 int energy;
 int money;
 float grade;
@@ -24,9 +24,7 @@ Button wellness;
 Button trueGrits;
 Button returnToCampus;
 Button start;
-
-//Stats bars 
-PlayerStatBar happinessBar = new PlayerStatBar(190, height-90, happiness, color(0,100,0), color(100,0,0));
+PlayerStatBar happinessBar;
 
 
 //Assets
@@ -65,6 +63,8 @@ void initThings(){
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
     returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
     start = new Button(int(width/2-45),height-300,90,90,"Start"); 
+
+    happinessBar = new PlayerStatBar(190, height-90, happiness);
 }
 
 
