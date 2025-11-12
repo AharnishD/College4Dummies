@@ -18,10 +18,10 @@ public class PlayerStatBar{
     void drawBar(float value){
         float redBarSize = barLength;
         fill(colorEmpty); 
-        rect(width/8, y, redBarSize, 30);
+        rect(190, y, redBarSize, 30);
 
         fill(colorFull); 
-        rect(width/8, y,value, 30); 
+        rect(190, y,value, 30); 
     }
 
 }
