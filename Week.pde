@@ -1,6 +1,6 @@
 public class Week{
 
-    int timeLength = 5; //tweek length in sec
+    int timeLength = 5; //week length in sec
     int weekNumber; 
     String event = "NONE"; 
     int timeWhenWeekStarts = millis();

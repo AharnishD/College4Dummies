@@ -2,6 +2,7 @@
 static String currentScene;
 static int startTime;
 static int week = 1; 
+int sec;
 
 //Stats 
 int health;
@@ -68,7 +69,6 @@ void initThings(){
 
 private String changeSceneCheck = "aaaaaaaaaaaaaaaaaaaaaaa";
 void drawScene(String current){
-
     updateUI();
 
     switch (current) {
@@ -148,3 +148,4 @@ void safeBackground(){
     fill(0);
     rect(0,0,width,height-130);
 }
+
