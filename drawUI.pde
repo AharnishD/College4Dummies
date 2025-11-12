@@ -2,9 +2,7 @@
 
 void drawUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions"){
-        //keepScore()
         image(hotBar, 15, height-130, width, 450); 
-        //keepScore();
         SetUIText();
     }
     
@@ -12,9 +10,8 @@ void drawUI(){
 
 void updateUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions"){
-        //keepScore();
         SetUIText();
-        progressBarsUI();
+        happinessBar.drawBar(happiness); 
     } 
 }
 
@@ -27,11 +24,3 @@ void SetUIText(){
 }
 
 
-void progressBarsUI(){
-    happiness = 20;
-    rect(185, height-101,happiness,20);
-    //if ate increase happiness
-    //if you got a good test increase happiness
-    //if you slept increase happiness a little
-    
-}

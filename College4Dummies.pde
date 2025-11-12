@@ -26,7 +26,7 @@ Button returnToCampus;
 Button start;
 
 //Stats bars 
-PlayerStatBar happinessBar = new PlayerStatBar(150, height-90, happiness, color(0,100,0), color(100,0,0));
+PlayerStatBar happinessBar = new PlayerStatBar(190, height-90, happiness, color(0,100,0), color(100,0,0));
 
 
 //Assets
