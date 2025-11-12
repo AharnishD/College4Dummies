@@ -4,8 +4,8 @@ static int startTime;
 static int week = 1; 
 int sec;
 
-//Stats 
-float happiness = 30;
+//Stats  //happy and energy can only be a max of 200
+float happiness = 100;
 int energy;
 int money;
 float grade;
@@ -64,7 +64,7 @@ void initThings(){
     returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
     start = new Button(int(width/2-45),height-300,90,90,"Start"); 
 
-    happinessBar = new PlayerStatBar(190, height-90, happiness);
+    happinessBar = new PlayerStatBar(190, height-105, happiness, color(0,100,0));
 }
 
 
