@@ -7,5 +7,9 @@ void dorm(){
     fill(255);
     text("Welcome to your dorm", width/2,height/2);
     returnToCampus.display();
+
+    if(returnToCampus.isClicked()){
+        currentScene = "campus";
+    }
 }      
    

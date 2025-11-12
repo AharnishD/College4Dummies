@@ -17,7 +17,7 @@ void startUpScreen(){
    if (alpha < 255) {
      alpha += 10; 
    }
-   if(timer/1000 == 5){
+   if(timer/1000 == 3){
       startupStage =2;
    }
       
@@ -34,7 +34,7 @@ void startUpScreen(){
     if (textOpacity < 255) {
       textOpacity += 1.5;
     }
-    if(timer/1000 == 10){
+    if(timer/1000 == 8){
       startupStage =3; 
       alpha=0; 
     }
@@ -48,7 +48,7 @@ void startUpScreen(){
     if (alpha < 255) {
      alpha +=10;  
     }
-    if(timer/1000 == 15){
+    if(timer/1000 == 11){
       startupStage = 4;
     }
   }else if(startupStage==4){

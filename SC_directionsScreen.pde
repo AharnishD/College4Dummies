@@ -13,4 +13,9 @@ void directions(){
     fill(100,0,0);
     text("You Fail", width/2, 300); 
     start.display();
+
+    if(start.isClicked()){
+        currentScene = "dorm";
+    }
+
 }

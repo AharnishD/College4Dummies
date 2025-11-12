@@ -8,4 +8,8 @@ void engineering(){
     text("Welcome to the your discussion", width/2,height/2);
     returnToCampus.display();
 
+    if(returnToCampus.isClicked()){
+        currentScene = "campus";
+    }
+
 }

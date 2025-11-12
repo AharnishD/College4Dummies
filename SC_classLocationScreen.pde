@@ -8,4 +8,8 @@ void classLocation(){
     text("Welcome to the Comp101", width/2,height/2);
     returnToCampus.display();
 
+    if(returnToCampus.isClicked()){
+        currentScene = "campus";
+    }
+
 }

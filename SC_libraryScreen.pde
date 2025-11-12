@@ -7,4 +7,9 @@ void library(){
     fill(255);
     text("Welcome to the livrartyy", width/2,height/2);
     returnToCampus.display();
+
+    if(returnToCampus.isClicked()){
+        currentScene = "campus";
+    }
+
 }

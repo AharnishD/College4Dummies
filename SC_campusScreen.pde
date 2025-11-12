@@ -34,7 +34,7 @@ void campus(){
     ILSB.display();
 
     if(uniCenter.isClicked()){
-        currentScene = "unicenter";
+        currentScene = "uniCenter";
         returnToCampus.display();
     }
     uniCenter.display();

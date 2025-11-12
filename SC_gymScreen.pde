@@ -7,4 +7,8 @@ void gym(){
     fill(255);
     text("Welcome to the gym", width/2,height/2);
     returnToCampus.display();
+
+    if(returnToCampus.isClicked()){
+        currentScene = "campus";
+    }
 }

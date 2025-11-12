@@ -1,6 +1,7 @@
 //Game state
 static String currentScene;
 static int startTime;
+static int week = 1; 
 
 //Stats 
 int health;
@@ -29,6 +30,7 @@ static public PImage gameLogo;
 static public PImage playerImg; 
 static public PImage hotBar; 
 static public PFont font;
+
 
 
 void setup(){
@@ -62,6 +64,8 @@ void initThings(){
 
 
 
+
+
 private String changeSceneCheck = "aaaaaaaaaaaaaaaaaaaaaaa";
 void drawScene(String current){
 
@@ -73,66 +77,36 @@ void drawScene(String current){
         break;
     case "directions":
         directions();
-        if(start.isClicked()){
-            currentScene = "dorm";
-        }
         break;
     case "campus":
         campus();
         break;
     case "library":
         library();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     case "RAC":
         gym();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     case "dorm":
         dorm();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     case "commons":
         commons();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     case "classLocation":
         classLocation();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     case "uniCenter":
         uniCenter();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     case "engeneering":
         engineering();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     case "wellness":
         wellness();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     case "trueGrits":
         trueGrits();
-        if(returnToCampus.isClicked()){
-            currentScene = "campus";
-        }
         break;
     default:
         //This will never show
