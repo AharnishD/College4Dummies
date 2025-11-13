@@ -12,4 +12,12 @@ void library(){
         currentScene = "campus";
     }
 
+    studyLibrary.display(); 
+    if(studyLibrary.isClicked()){
+        changeEnergy(-10);
+        changeHappiness(-5);
+    }
+
+
+
 }

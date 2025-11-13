@@ -1,5 +1,5 @@
 
-String[] tasks = {"Attend \n Class","Studt","Work Out","Buy Book","Sleep"};
+String[] tasks = {"Attend \n Class", "Study", "Work \n Out", "Buy \n Book", "Sleep", "Party", "Attend \n Discussion"};
 
 
 void generateWeekTodoList(){
