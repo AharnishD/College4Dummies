@@ -3,6 +3,7 @@ static String currentScene;
 static int startTime;
 static int week = 1; 
 int sec;
+boolean miniGameRunning = false;
 
 //Stats  //happy and energy can only be a max of 170
 float happiness = 170;
@@ -157,3 +158,26 @@ void safeBackground(){
     rect(0,0,width,height-130);
 }
 
+void changeHappiness(int amount){
+    happiness += amount;
+
+    if(happiness<0){
+        happiness=0;
+    }else if(happiness>170){
+        happiness = 170;
+    }
+
+    delay(200);
+}
+
+void changeEnergy(int amount){
+    energy += amount;
+
+    if(energy<0){
+        energy=0;
+    }else if(energy>170){
+        energy = 170;
+    }
+
+    delay(200);
+}
