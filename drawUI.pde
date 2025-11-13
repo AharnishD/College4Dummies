@@ -12,7 +12,20 @@ void updateUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions"){
         SetUIText();
         happinessBar.drawBar(happiness); 
-        energyBar.drawBar(energy);
+        energyBar.drawBar(energy); 
+
+        textAlign(LEFT,CENTER);
+        textSize(15);
+        fill(150,0,0);
+        for(int i=0; i<toDoList.length; i++){
+            if(i<4){
+                text(toDoList[i], 620 + (130*i), height-100);
+            }else{
+                text(toDoList[i], 620 + (130*(i-4)), height-50);
+            }
+            
+        }
+
     } 
 }
 

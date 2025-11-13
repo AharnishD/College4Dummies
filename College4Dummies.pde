@@ -2,8 +2,8 @@
 static String currentScene;
 static int startTime;
 static int week = 1; 
-int sec;
 boolean miniGameRunning = false;
+String[] toDoList = new String[8]; 
 
 //Stats  //happy and energy can only be a max of 170
 float happiness = 170;
@@ -72,6 +72,11 @@ void draw(){
 
 
 void initThings(){
+
+    //THIS IS A TEST REMOVE LATER 
+    generateWeekTodoList();
+
+
     //character
     player = new Human("Sara",35,200,200);
 
