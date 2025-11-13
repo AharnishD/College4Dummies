@@ -1,7 +1,4 @@
-Button commonsStudy = new Button(int(width/6),int(height/4),90,90,"Study");
-
-
-void commons(){
+public void commons(){
     safeBackground();
     player.displayPlayer();
     player.move();
@@ -18,6 +15,10 @@ void commons(){
     commonsStudy.display(); 
     if(commonsStudy.isClicked()){
         changeEnergy(-10);
+    }
+    commonsEat.display();
+    if(commonsEat.isClicked()){
+        changeEnergy(10);
     }
 }
 

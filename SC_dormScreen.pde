@@ -11,5 +11,13 @@ void dorm(){
     if(returnToCampus.isClicked()){
         currentScene = "campus";
     }
+
+    sleepInDorm.display(); 
+    sleepInDorm2.display();
+    if(sleepInDorm.isClicked() || sleepInDorm2.isClicked()){
+        changeEnergy(999);
+        changeHappiness(999);
+    }
+    dormBed();
 }      
    

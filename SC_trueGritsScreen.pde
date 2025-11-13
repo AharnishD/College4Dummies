@@ -11,6 +11,12 @@ void trueGrits(){
     if(returnToCampus.isClicked()){
         currentScene = "campus";
     }
+
+    eatFood.display(); 
+    if(eatFood.isClicked()){
+        changeEnergy(15);
+        changeHappiness(10);
+    }
     
 }
 

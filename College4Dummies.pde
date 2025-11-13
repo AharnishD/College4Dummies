@@ -26,9 +26,27 @@ Button trueGrits;
 Button returnToCampus;
 Button start;
 
+
+//building mechanics
+Button commonsStudy;
+Button commonsEat;
+
+Button attendClass;
+
+Button workout;
+
+Button attendDiscussion;
+
+Button eatFood;
+
+Button sleepInDorm;
+Button sleepInDorm2;
+
 //player stats bars
 PlayerStatBar happinessBar;
 PlayerStatBar energyBar;
+
+
 
 
 //Assets
@@ -54,8 +72,10 @@ void draw(){
 
 
 void initThings(){
+    //character
     player = new Human("Sara",35,200,200);
 
+    //buildings
     library = new Button(int(width/6),int(height/6.0),90,90,"AOK. Library");
     RAC = new Button(int(width/2),int(height/1.5),80,80,"RAC");
     Chesapeake = new Button(int(width/1.5),int(height/6.7),70,70,"Chesapeake\n Hall");
@@ -67,9 +87,27 @@ void initThings(){
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
     returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
     start = new Button(int(width/2-45),height-300,90,90,"Start"); 
-
+    
+    //player stats
     happinessBar = new PlayerStatBar(height-105, happiness,color(0,100,0));
     energyBar = new PlayerStatBar(height-65,energy,color(125,249,255));
+
+    //mechanics buttons
+    commonsStudy = new Button(int(width/2.5),int(height/1.8),90,90,"Study");
+    commonsEat = new Button(int(width/1.8),int(height/1.8),90,90,"Eat");
+
+    attendClass = new Button(int(width/1.8),int(height/1.8),90,90,"Go To Class");
+
+    workout = new Button(int(width/1.8),int(height/1.8),90,90,"Lift weights");
+
+    attendDiscussion = new Button(int(width/1.8),int(height/1.8),90,90,"Go to Discussion");
+
+    eatFood = new Button(int(width/1.8),int(height/1.8),90,90,"Go Eat");
+
+    sleepInDorm = new Button((width - (width / 6)),0,width/6,(2 * height) / 6,"Go Sleep");
+    sleepInDorm2 = new Button((width - (width / 6)),height - ((2 * height) / 6) -130,width/6,(2 * height) / 6,"Go Sleep");
+
+
 }
 
 
@@ -156,28 +194,4 @@ void loadAssets(){
 void safeBackground(){
     fill(0);
     rect(0,0,width,height-130);
-}
-
-void changeHappiness(int amount){
-    happiness += amount;
-
-    if(happiness<0){
-        happiness=0;
-    }else if(happiness>170){
-        happiness = 170;
-    }
-
-    delay(200);
-}
-
-void changeEnergy(int amount){
-    energy += amount;
-
-    if(energy<0){
-        energy=0;
-    }else if(energy>170){
-        energy = 170;
-    }
-
-    delay(200);
 }

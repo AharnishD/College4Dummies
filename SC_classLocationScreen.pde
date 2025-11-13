@@ -12,4 +12,11 @@ void classLocation(){
         currentScene = "campus";
     }
 
+
+
+    attendClass.display(); 
+    if(attendClass.isClicked()){
+        changeEnergy(-10);
+        changeHappiness(-5);
+    }
 }

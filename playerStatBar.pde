@@ -23,5 +23,26 @@ public class PlayerStatBar{
         fill(colorFull); 
         rect(190, y,value, 30); 
     }
+}
 
+void changeHappiness(int amount){
+    happiness += amount;
+
+    if(happiness<0){
+        happiness=0;
+    }else if(happiness>170){
+        happiness = 170;
+    }
+    delay(200);
+}
+
+void changeEnergy(int amount){
+    energy += amount;
+
+    if(energy<0){
+        energy=0;
+    }else if(energy>170){
+        energy = 170;
+    }
+    delay(200);
 }

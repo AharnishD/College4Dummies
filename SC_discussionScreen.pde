@@ -12,4 +12,10 @@ void engineering(){
         currentScene = "campus";
     }
 
+    attendDiscussion.display(); 
+    if(attendDiscussion.isClicked()){
+        changeEnergy(-10);
+        changeHappiness(-5);
+    }
+
 }

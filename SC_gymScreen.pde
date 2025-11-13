@@ -11,4 +11,12 @@ void gym(){
     if(returnToCampus.isClicked()){
         currentScene = "campus";
     }
+
+    workout.display(); 
+    if(workout.isClicked()){
+        changeEnergy(-20);
+        changeHappiness(5);
+    }
+
+
 }
