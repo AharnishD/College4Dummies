@@ -105,7 +105,7 @@ void initThings(){
     eatFood = new Button(int(width/1.8),int(height/1.8),90,90,"Go Eat");
 
     sleepInDorm = new Button((width - (width / 6)),0,width/6,(2 * height) / 6,"Go Sleep");
-    sleepInDorm2 = new Button((width - (width / 6)),height - ((2 * height) / 6) -130,width/6,(2 * height) / 6,"Go Sleep");
+    sleepInDorm2 = new Button((width - (width / 6)),height - ((2 * height) / 6 ) -130,width/6,(2 * height) / 6,"Go Sleep");
 
 
 }

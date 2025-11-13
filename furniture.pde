@@ -5,7 +5,6 @@ void dormBed(){
     int bedWidth = width / 6;  // wanted width of bed to be 1/5 of screen
     int bedY2 = height - bedHeight -130; // 130 is static for the UI Bar at bottom of the screen. 
     
-
 // Top Right Bed
     // white sheets
     rectMode(CORNER);
