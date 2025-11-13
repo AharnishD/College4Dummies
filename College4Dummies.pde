@@ -5,8 +5,8 @@ static int week = 1;
 int sec;
 
 //Stats  //happy and energy can only be a max of 170
-float happiness = 85;
-int energy = 105;
+float happiness = 170;
+int energy = 170;
 int money;
 float grade;
 
