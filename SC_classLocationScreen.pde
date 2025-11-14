@@ -18,5 +18,6 @@ void classLocation(){
     if(attendClass.isClicked()){
         energyBar.changeEnergy(-10);
         happinessBar.changeHappiness(-5);
+        clearTask("Attend \n Class");
     }
 }

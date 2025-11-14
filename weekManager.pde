@@ -1,5 +1,6 @@
 
-String[] tasks = {"Attend \n Class", "Study", "Work \n Out", "Buy \n Book", "Sleep", "Party", "Attend \n Discussion"};
+//String[] tasks = {"Attend \n Class", "Study", "Work \n Out", "Buy \n Book", "Sleep", "Party", "Attend \n Discussion"};
+String[] tasks = {"Attend \n Class", "Study \n Library", "Work \n Out"};
 
 
 void generateWeekTodoList(){
@@ -24,5 +25,23 @@ void generateWeekTodoList(){
         }
     }
 
+}
+
+boolean checkForWeekEnding(){
+    for(int i=0; i<toDoList.length; i++){
+        if(!(toDoList[i].equals(" "))){
+            return false;
+        }
+    }
+    return true; 
+}
+
+void clearTask(String task){
+    for(int i=0; i<toDoList.length; i++){
+        if(toDoList[i].equals(task)){
+            toDoList[i] = " "; 
+        }
+    }
+    drawUI();
 
 }

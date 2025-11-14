@@ -1,7 +1,7 @@
 //Game state
 static String currentScene;
 static int startTime;
-static int week = 1; 
+static int week = 1; //1-15 
 boolean miniGameRunning = false;
 String[] toDoList = new String[8]; 
 
@@ -66,6 +66,8 @@ void setup(){
     loadAssets(); 
     initThings();
     currentScene = "startup";
+
+    
 }
 
 void draw(){
@@ -75,8 +77,7 @@ void draw(){
 
 void initThings(){
 
-    //THIS IS A TEST REMOVE LATER 
-    generateWeekTodoList();
+
 
 
     //character
@@ -163,8 +164,11 @@ void drawScene(String current){
     case "trueGrits":
         trueGrits();
         break;
+    case "endWeekStats":
+        endWeekStats();
+        break;
     default:
-        //This will never show
+        //This will never show 
     }
 
 
@@ -201,5 +205,6 @@ void loadAssets(){
 //stes a scenes GB without covering up UI etc 
 void safeBackground(){
     fill(0);
+    noStroke();
     rect(0,0,width,height-130);
 }

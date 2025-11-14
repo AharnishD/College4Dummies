@@ -15,8 +15,11 @@ void dorm(){
     sleepInDorm.display(); 
     sleepInDorm2.display();
     if(sleepInDorm.isClicked() || sleepInDorm2.isClicked()){
-        energyBar.changeEnergy(999);
-        happinessBar.changeHappiness(999);
+        if(checkForWeekEnding()){
+            currentScene = "endWeekStats"; 
+        }else{
+            println("week not over!");
+        }
     }
     dormBed();
     dormDesk();

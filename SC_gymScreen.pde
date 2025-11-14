@@ -16,6 +16,7 @@ void gym(){
     if(workout.isClicked()){
         energyBar.changeEnergy(-20);
         happinessBar.changeHappiness(5);
+        clearTask("Work \n Out");
     }
 
 

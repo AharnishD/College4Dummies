@@ -15,6 +15,7 @@ void directions(){
     start.display();
 
     if(start.isClicked()){
+        generateWeekTodoList(); 
         currentScene = "dorm";
     }
 
