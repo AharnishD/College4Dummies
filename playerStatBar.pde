@@ -1,13 +1,13 @@
+//player stat bar object
 public class PlayerStatBar{
-
+    //instance variables
     int barLength = 170; 
-
     float value;
     color colorFull;
     color colorEmpty;
     int y;
 
-
+    //constructor
     public PlayerStatBar (int initYLoc, float initValue, color initColorFull){
         this.value = initValue;
         this.colorFull = initColorFull;
@@ -15,6 +15,7 @@ public class PlayerStatBar{
         this.y = initYLoc;
     }
 
+    //draws the stat bar and allows it to reflect the state of player
     void drawBar(float value){
         float redBarSize = barLength;
         fill(colorEmpty); 
@@ -24,6 +25,7 @@ public class PlayerStatBar{
         rect(220, y,value, 30); 
     }
 
+    //actually changes the happiness stat 
     void changeHappiness(int amount){
         happiness += amount;
 
@@ -35,6 +37,7 @@ public class PlayerStatBar{
         delay(200);
     }
 
+    //actually changes the energy stat
     void changeEnergy(int amount){
         energy += amount;
 
@@ -45,7 +48,6 @@ public class PlayerStatBar{
         }
         delay(200);
     }
-
 }
 
 

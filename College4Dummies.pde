@@ -46,7 +46,7 @@ Button studyDorm2;
 
 Button studyLibrary;
 
-//player stats bars
+//player stat bars
 PlayerStatBar happinessBar;
 PlayerStatBar energyBar;
 
@@ -61,28 +61,24 @@ static public PImage hotBar;
 static public PFont font;
 
 
-
+//makes the environment while loading our assets and initializing our objects and sets the current scene
 void setup(){
     startTime = millis(); //This NEEDS to be first   
     fullScreen();
     loadAssets(); 
     initThings();
     currentScene = "startup";
-
-    
 }
 
+//draws our scene
 void draw(){
     drawScene(currentScene); 
 }
 
-
+//initalizes all of our objects
 void initThings(){
-
-
-
-
     //character
+    //I LOVE YOUUU
     player = new Human("Sara",35,200,200);
 
     //buildings
@@ -97,6 +93,7 @@ void initThings(){
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
     returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
 
+    //start button so the player can enter the game
     start = new Button(int(width/2-45),height/2,90,90,"Start"); 
     
     //player stats
@@ -123,14 +120,9 @@ void initThings(){
     studyDorm = new Button(width/2 - (width/6)/2,0,width/6,height/9,"Study");
 
     studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 130,width/6,height / 9,"Study");
-
-
 }
 
-
-
-
-
+//NATHAN YOU DO THIS PART*************************
 private String changeSceneCheck = "aaaaaaaaaaaaaaaaaaaaaaa";
 void drawScene(String current){
     updateUI();
@@ -179,7 +171,7 @@ void drawScene(String current){
         //This will never show 
     }
 
-
+    //NATHAN DO THIS PART TOOOO****************
     if(!(changeSceneCheck.equals(current))){   
        changeSceneCheck = current;
        background(0);

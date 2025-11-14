@@ -1,14 +1,12 @@
 
-
+//NATHAN DO THIS PART 
 void drawUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions" && currentScene != "endWeekStats"){
         image(hotBar, 15, height-130, width, 450); 
         updateUI();
-
-    }
-    
+    } 
 }
-
+//NATHANNNNN
 void updateUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions" && currentScene != "endWeekStats"){
         happinessBar.drawBar(happiness); 
@@ -29,9 +27,7 @@ void updateUI(){
             }else{
                 text(toDoList[i], width/2 + (150*(i-4)), height-50);
             }
-            
         }
-
     } 
 }
 

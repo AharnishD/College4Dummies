@@ -1,3 +1,4 @@
+//Draws the campus layout of UMBC 
 void campus(){
     safeBackground(); 
 

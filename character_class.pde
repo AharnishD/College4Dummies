@@ -1,4 +1,6 @@
+//Human class (player)
 public class Human {
+  //instance variables
   String name;
   int age;
   int x, y;
@@ -9,6 +11,7 @@ public class Human {
   int armOffset = 0;
   int armSpeed = 2;
 
+  //constructor
   public Human(String name, int age, int x, int y) {
     this.name = name;
     this.age = age;
@@ -17,24 +20,28 @@ public class Human {
     shirtColor = color(255);
   }
 
+  //loads the image of the player from "Assets" folder
   void displayPlayer() {
     image(playerImg, x, y, 80, 80);
   }
 
-void move() {
-  if (keyPressed) {
-    if (keyCode == LEFT || key == 'a') {
-      playerLookDir = false;
-      x -= 5;
-    } else if (keyCode == RIGHT || key == 'd') {
-      playerLookDir = true;
-      x += 5;
-    } else if (keyCode == UP || key == 'w') {
-      y -= 5;
-    } else if (keyCode == DOWN || key == 's') {
-      y += 5;
-    }
 
+//moves the player up,down, and side-to-side
+  void move() {
+    if (keyPressed) {
+      if (keyCode == LEFT || key == 'a') {
+        playerLookDir = false;
+        x -= 5;
+      } else if (keyCode == RIGHT || key == 'd') {
+        playerLookDir = true;
+        x += 5;
+      } else if (keyCode == UP || key == 'w') {
+        y -= 5;
+      } else if (keyCode == DOWN || key == 's') {
+        y += 5;
+      }
+
+    //lines 45-57 ensure the player doesn't go out of bounds
     // Left or right wall
     if (x < 10) {
       x = 10;
