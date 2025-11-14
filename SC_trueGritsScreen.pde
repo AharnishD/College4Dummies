@@ -16,6 +16,7 @@ void trueGrits(){
     if(eatFood.isClicked()){
         energyBar.changeEnergy(15);
         happinessBar.changeHappiness(10);
+        clearTask("Eat"); 
     }
     
 }

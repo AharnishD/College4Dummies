@@ -1,6 +1,5 @@
-
-//String[] tasks = {"Attend \n Class", "Study", "Work \n Out", "Buy \n Book", "Sleep", "Party", "Attend \n Discussion"};
-String[] tasks = {"Attend \n Class", "Study \n Library", "Work \n Out"};
+String[] tasks = {"Attend \n Class", "Commons \n Study", "Commons \n Eat",
+ "Attend \n Discussion", "Study In \n Dorm", "Study \n Library", "Work \n Out", "Eat"};
 
 
 void generateWeekTodoList(){
@@ -16,8 +15,11 @@ void generateWeekTodoList(){
     }
 
     for(int i = 0; i<genNumber; i++){
-        toDoList[i] = tasks[int(random(0, tasks.length))];
+
+        if(!(checkAndAddToDoListItem(i))) i--;
+
     }
+
 
     for(int i = 0; i<toDoList.length; i++){
         if(toDoList[i] == null){
@@ -25,6 +27,18 @@ void generateWeekTodoList(){
         }
     }
 
+}
+
+boolean checkAndAddToDoListItem(int index){
+    String temp = tasks[int(random(0, tasks.length))];
+
+    for(int e=0; e<toDoList.length; e++){
+        if(temp.equals(toDoList[e])){
+            return false;
+        }
+    }
+    toDoList[index] = temp;
+    return true; 
 }
 
 boolean checkForWeekEnding(){

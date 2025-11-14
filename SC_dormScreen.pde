@@ -30,6 +30,7 @@ void dorm(){
     if(studyDorm.isClicked() || studyDorm2.isClicked()){
         energyBar.changeEnergy(-10);
         happinessBar.changeHappiness(-20);
+        clearTask("Study In \n Dorm"); 
     }
 
 
