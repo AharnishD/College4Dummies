@@ -41,6 +41,8 @@ Button eatFood;
 
 Button sleepInDorm;
 Button sleepInDorm2;
+Button studyDorm;
+Button studyDorm2;
 
 Button studyLibrary;
 
@@ -94,7 +96,8 @@ void initThings(){
     wellness = new Button(int(width/1.5),int(height/3.7),70,50,"wellness\n center");
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
     returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
-    start = new Button(int(width/2-45),height-300,90,90,"Start"); 
+
+    start = new Button(int(width/2-45),height/2,90,90,"Start"); 
     
     //player stats
     happinessBar = new PlayerStatBar(height-105, happiness,color(0,100,0));
@@ -115,7 +118,12 @@ void initThings(){
     sleepInDorm = new Button((width - (width / 6)),0,width/6,(2 * height) / 6,"Go Sleep");
     sleepInDorm2 = new Button((width - (width / 6)),height - ((2 * height) / 6 ) -130,width/6,(2 * height) / 6,"Go Sleep");
 
-    studyLibrary = new Button(int(width/1.8),int(height/1.8),90,90,"Go Eat");
+    studyLibrary = new Button(int(width/1.8),int(height/1.8),90,90,"Study");
+
+    studyDorm = new Button(width/2 - (width/6)/2,0,width/6,height/9,"Study");
+
+    studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 130,width/6,height / 9,"Study");
+
 
 }
 

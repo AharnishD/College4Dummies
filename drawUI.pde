@@ -17,18 +17,17 @@ void updateUI(){
         textAlign(LEFT,CENTER);
         textSize(30);
         fill(0,150,0);
-        text("Happiness", 108, height-90);
+        text("Happiness", width/2 - width/2 + 50, height-90);
         fill(150,150,0);
-        text("Energy", 85, height-55);
+        text("Energy", width/2 - width/2 + 50, height-55);
 
-        
         textSize(15);
         fill(150,0,0);
         for(int i=0; i<toDoList.length; i++){
             if(i<4){
-                text(toDoList[i], 620 + (130*i), height-100);
+                text(toDoList[i], width/2 + (150*i), height-100);
             }else{
-                text(toDoList[i], 620 + (130*(i-4)), height-50);
+                text(toDoList[i], width/2 + (150*(i-4)), height-50);
             }
             
         }

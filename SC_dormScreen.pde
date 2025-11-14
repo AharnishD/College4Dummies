@@ -14,13 +14,25 @@ void dorm(){
 
     sleepInDorm.display(); 
     sleepInDorm2.display();
+
+    studyDorm.display();
+    studyDorm2.display();
     if(sleepInDorm.isClicked() || sleepInDorm2.isClicked()){
         if(checkForWeekEnding()){
             currentScene = "endWeekStats"; 
+            energyBar.changeEnergy(999);
+            happinessBar.changeHappiness(999);
         }else{
             println("week not over!");
         }
     }
+
+    if(studyDorm.isClicked() || studyDorm2.isClicked()){
+        energyBar.changeEnergy(-10);
+        happinessBar.changeHappiness(-20);
+    }
+
+
     dormBed();
     dormDesk();
 }      
