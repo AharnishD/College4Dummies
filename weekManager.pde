@@ -14,7 +14,7 @@ void generateWeekTodoList(){
         genNumber = 8;
     }
 
-    for(int i = 0; i<genNumber; i++){
+    /*for(int i = 0; i<genNumber; i++){
         if(!(checkAndAddToDoListItem(i))) i--;
     }
 
@@ -23,11 +23,35 @@ void generateWeekTodoList(){
         if(toDoList[i] == null){
             toDoList[i] = " ";
         }
+    }*/
+
+    for(int i = 0; i < toDoList.length; i++){
+        toDoList[i] = " ";
     }
+
+    int i = 0;
+    while (i < genNumber) {
+        String temp = tasks[int(random(0, tasks.length))];
+        if(notInToDoList(temp)) {
+            toDoList[i] = temp;
+            i++;
+        }
+    }
+
 
 }
 
-boolean checkAndAddToDoListItem(int index){
+boolean notInToDoList(String task){
+    for(int i = 0; i < toDoList.length;i++){
+        if(task.equals(toDoList[i])){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+/*boolean checkAndAddToDoListItem(int index){
     String temp = tasks[int(random(0, tasks.length))];
     for(int e=0; e<toDoList.length; e++){
         if(temp.equals(toDoList[e])){
@@ -36,7 +60,7 @@ boolean checkAndAddToDoListItem(int index){
     }
     toDoList[index] = temp;
     return true; 
-}
+}*/
 
 boolean checkForWeekEnding(){
     for(int i=0; i<toDoList.length; i++){
