@@ -15,9 +15,10 @@ void dorm(){
     sleepInDorm.display(); 
     sleepInDorm2.display();
     if(sleepInDorm.isClicked() || sleepInDorm2.isClicked()){
-        changeEnergy(999);
-        changeHappiness(999);
+        energyBar.changeEnergy(999);
+        happinessBar.changeHappiness(999);
     }
     dormBed();
+    dormDesk();
 }      
    

@@ -14,8 +14,8 @@ void library(){
 
     studyLibrary.display(); 
     if(studyLibrary.isClicked()){
-        changeEnergy(-10);
-        changeHappiness(-5);
+        energyBar.changeEnergy(-10);
+        happinessBar.changeHappiness(-5);
     }
 
 

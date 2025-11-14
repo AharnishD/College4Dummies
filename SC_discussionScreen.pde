@@ -14,8 +14,8 @@ void engineering(){
 
     attendDiscussion.display(); 
     if(attendDiscussion.isClicked()){
-        changeEnergy(-10);
-        changeHappiness(-5);
+        energyBar.changeEnergy(-10);
+        happinessBar.changeHappiness(-5);
     }
 
 }

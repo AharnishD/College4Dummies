@@ -14,11 +14,11 @@ public void commons(){
 
     commonsStudy.display(); 
     if(commonsStudy.isClicked()){
-        changeEnergy(-10);
+        energyBar.changeEnergy(-10);
     }
     commonsEat.display();
     if(commonsEat.isClicked()){
-        changeEnergy(10);
+        energyBar.changeEnergy(10);
     }
 }
 

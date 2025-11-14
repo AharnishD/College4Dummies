@@ -14,8 +14,8 @@ void gym(){
 
     workout.display(); 
     if(workout.isClicked()){
-        changeEnergy(-20);
-        changeHappiness(5);
+        energyBar.changeEnergy(-20);
+        happinessBar.changeHappiness(5);
     }
 
 

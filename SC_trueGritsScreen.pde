@@ -14,8 +14,8 @@ void trueGrits(){
 
     eatFood.display(); 
     if(eatFood.isClicked()){
-        changeEnergy(15);
-        changeHappiness(10);
+        energyBar.changeEnergy(15);
+        happinessBar.changeHappiness(10);
     }
     
 }
