@@ -15,9 +15,7 @@ void generateWeekTodoList(){
     }
 
     for(int i = 0; i<genNumber; i++){
-
         if(!(checkAndAddToDoListItem(i))) i--;
-
     }
 
 
@@ -31,7 +29,6 @@ void generateWeekTodoList(){
 
 boolean checkAndAddToDoListItem(int index){
     String temp = tasks[int(random(0, tasks.length))];
-
     for(int e=0; e<toDoList.length; e++){
         if(temp.equals(toDoList[e])){
             return false;
@@ -57,5 +54,4 @@ void clearTask(String task){
         }
     }
     drawUI();
-
 }

@@ -7,7 +7,7 @@ String[] toDoList = new String[8];
 
 //Stats  //happy and energy can only be a max of 170
 float happiness = 170;
-int energy = 170;
+float energy = 170;
 int money;
 float grade;
 
@@ -107,7 +107,7 @@ void initThings(){
     commonsStudy = new Button(int(width/2.5),int(height/1.8),90,90,"Study");
     commonsEat = new Button(int(width/1.8),int(height/1.8),90,90,"Eat");
 
-    attendClass = new Button(int(width/1.8),int(height/1.8),90,90,"Go To Class");
+    attendClass = new Button(int(width/1.8),int(height/1.5),90,90,"Go To Class");
 
     workout = new Button(int(width/1.8),int(height/1.8),90,90,"Lift weights");
 
