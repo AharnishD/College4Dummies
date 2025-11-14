@@ -21,7 +21,6 @@ void dorm(){
         if(checkForWeekEnding()){
             currentScene = "endWeekStats"; 
             energyBar.changeEnergy(999);
-            happinessBar.changeHappiness(999);
         }else{
             println("week not over!");
         }

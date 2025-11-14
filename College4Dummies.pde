@@ -25,6 +25,7 @@ Button wellness;
 Button trueGrits;
 Button returnToCampus;
 Button start;
+Button nextWeek;
 
 
 //building mechanics
@@ -95,6 +96,7 @@ void initThings(){
 
     //start button so the player can enter the game
     start = new Button(int(width/2-45),height/2,90,90,"Start"); 
+    nextWeek = new Button(int(width/13),height/2,90,90,"Next Week");
     
     //player stats
     happinessBar = new PlayerStatBar(height-105, happiness,color(0,100,0));
