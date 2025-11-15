@@ -5,7 +5,7 @@ String[] tasks = {"Attend \n Class", "Commons \n Study", "Commons \n Eat",
 void generateWeekTodoList(){
     int genNumber;
     if(week < 3){
-        genNumber = 8;
+        genNumber = 3;
     } else if(week < 7) {
         genNumber = 5;
     } else if(week < 11){

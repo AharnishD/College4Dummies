@@ -17,6 +17,7 @@ public class PlayerStatBar{
 
     //draws the stat bar and allows it to reflect the state of player
     void drawBar(float value){
+        stroke(0);
         float redBarSize = barLength;
         fill(colorEmpty); 
         rect(220, y, redBarSize, 30);

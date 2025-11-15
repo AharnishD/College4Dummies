@@ -21,7 +21,8 @@ void dorm(){
     studyDorm2.display();
     if(sleepInDorm.isClicked() || sleepInDorm2.isClicked()){
         if(checkForWeekEnding()){
-            currentScene = "endWeekStats"; 
+            currentScene = "endWeekStats";
+            time = -1; 
             energyBar.changeEnergy(999);
         }else{
             println("week not over!");

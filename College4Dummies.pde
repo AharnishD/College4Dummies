@@ -75,6 +75,7 @@ void setup(){
 
 //draws our scene
 void draw(){
+    runTimer();
     if(detectLoss()){
         currentScene = "lose";
     }

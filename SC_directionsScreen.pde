@@ -17,6 +17,7 @@ void directions(){
     if(start.isClicked()){
         generateWeekTodoList(); 
         currentScene = "dorm";
+        startTimer(60);
     }
 
 }

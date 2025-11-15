@@ -25,11 +25,22 @@ void updateUI(){
         text("Money:  " + "$" + money, int(width/3.5) + 100,height - 55);
 
         fill(180,45,90);
-        text("GPA:  " + getLetterGrade(), int(width/3.5) + 100, height - 90);
+        text("Grade:  " + getLetterGrade(), int(width/3.5) + 100, height - 90);
 
         textAlign(CENTER,CENTER);
         fill(255);
-        text("Week " + week,width - 130,height - 90);
+        text("Week: " + week,width - 130,height - 90);
+
+        fill(255);
+        noStroke();
+        fill(16,19,60);
+        rect(width - 170, height-70, 100,30);
+        if(time<11){
+            fill(100,0,0);
+        }else{
+            fill(255);
+        }
+        text("Time: " + time,width - 120,height - 55);
 
         textSize(15);
         fill(150,0,0);
