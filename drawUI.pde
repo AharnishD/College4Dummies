@@ -1,12 +1,12 @@
 
-//NATHAN DO THIS PART 
+
 void drawUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions" && currentScene != "endWeekStats"){
         image(hotBar, 15, height-130, width, 450); 
         updateUI();
     } 
 }
-//NATHANNNNN
+
 void updateUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions" && currentScene != "endWeekStats"){
         happinessBar.drawBar(happiness); 
@@ -29,6 +29,14 @@ void updateUI(){
             }
         }
     } 
+}
+
+String getLetterGrade(){
+    if(grade>=90) return "A";
+    if(grade>=80) return "B";
+    if(grade>=70) return "C";
+    if(grade>=60) return "D"; 
+    else return "dammmmmmmm u stupid"; 
 }
 
 

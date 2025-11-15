@@ -9,7 +9,7 @@ String[] toDoList = new String[8];
 float happiness = 170;
 float energy = 170;
 int money;
-float grade;
+float grade = 100; 
 
 //Game player
 Human player;
@@ -73,6 +73,9 @@ void setup(){
 
 //draws our scene
 void draw(){
+    if(detectLoss()){
+        currentScene = "lose";
+    }
     drawScene(currentScene); 
 }
 
@@ -169,6 +172,9 @@ void drawScene(String current){
     case "endWeekStats":
         endWeekStats();
         break;
+    case "lose":
+        deathScreen("[You Failed]");
+        break;
     default:
         //This will never show 
     }
@@ -191,9 +197,6 @@ void drawScene(String current){
 
 
 
-void keyPressed(){
-
-}
 
 
 void loadAssets(){
@@ -201,7 +204,7 @@ void loadAssets(){
     gameLogo = loadImage("Assets/gameLogo.png");
     playerImg = loadImage("Assets/playerIMG.png");
     hotBar = loadImage("Assets/HD_HotBar.png"); 
-    font = createFont("PixelifySans-VariableFont_wght.ttf", 48);
+    font = createFont("Jersey10-Regular.ttf", 48);
 }
 
 //stes a scenes GB without covering up UI etc 
@@ -210,3 +213,11 @@ void safeBackground(){
     noStroke();
     rect(0,0,width,height-130);
 }
+
+
+boolean detectLoss(){
+    if(happiness<=0) return true;
+    if(energy<=0) return true;
+    if(grade<=60) return true;
+    return false;
+}   
