@@ -22,10 +22,10 @@ public class Button {
     void display(){
         if(isHover()){
             fill(hoverColor);
-            textSize(20);
+            textSize(23);
             label = "enter";
         } else {
-            textSize(10);
+            textSize(15);
             label = ogLabel;
             fill(baseColor);
         }

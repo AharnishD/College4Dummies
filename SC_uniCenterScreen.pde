@@ -8,6 +8,13 @@ void uniCenter(){
     text("Welcome to the uni center", width/2,height/2);
     returnToCampus.display();
 
+    ucParty.display();
+    if(studyLibrary.isClicked()){
+        energyBar.changeEnergy(-10);
+        happinessBar.changeHappiness(-5);
+        clearTask("Have \n Fun!");
+    }
+
     if(returnToCampus.isClicked()){
         currentScene = "campus";
         player.x = int(width/3.2) - 60;

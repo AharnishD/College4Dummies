@@ -47,6 +47,8 @@ Button studyDorm2;
 
 Button studyLibrary;
 
+Button ucParty;
+
 //player stat bars
 PlayerStatBar happinessBar;
 PlayerStatBar energyBar;
@@ -114,7 +116,9 @@ void initThings(){
     happinessBar = new PlayerStatBar(height-105, happiness,color(0,100,0));
     energyBar = new PlayerStatBar(height-65,energy,color(150,150,0));
 
-    //mechanics buttons
+    //mechanics 
+    ucParty = new Button(int(width/1.8),int(height/1.8),90,90,"Have \n Fun!");
+
     commonsStudy = new Button(int(width/2.5),int(height/1.8),90,90,"Study");
     commonsEat = new Button(int(width/1.8),int(height/1.8),90,90,"Eat");
 
@@ -126,14 +130,14 @@ void initThings(){
 
     eatFood = new Button(int(width/1.8),int(height/1.8),90,90,"Go Eat");
 
-    sleepInDorm = new Button((width - (width / 6)),0,width/6,(2 * height) / 6,"Go Sleep");
-    sleepInDorm2 = new Button((width - (width / 6)),height - ((2 * height) / 6 ) -130,width/6,(2 * height) / 6,"Go Sleep");
+    sleepInDorm = new Button((width - (width / 6)),20,width/6,(2 * height) / 6,"Go Sleep");
+    sleepInDorm2 = new Button((width - (width / 6)),height - ((2 * height) / 6 ) - 150,width/6,(2 * height) / 6,"Go Sleep");
 
     studyLibrary = new Button(int(width/1.8),int(height/1.8),90,90,"Study");
 
-    studyDorm = new Button(width/2 - (width/6)/2,0,width/6,height/9,"Study");
+    studyDorm = new Button(width/2 - (width/6)/2,10,width/6,height/9,"Study");
 
-    studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 130,width/6,height / 9,"Study");
+    studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 140,width/6,height / 9,"Study");
 }
 
 //NATHAN YOU DO THIS PART*************************

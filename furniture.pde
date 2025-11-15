@@ -1,9 +1,9 @@
 void dormBed(){
     int bedX = (width - (width / 6)); // start bed 1/6 of screen width away from right edge
-    int bedY = 0; // start bed at top edge of screen
+    int bedY = 20; // start bed at top edge of screen
     int bedHeight = (2 * height) / 6; // wanted length of bed to be 1/3 of height
     int bedWidth = width / 6;  // wanted width of bed to be 1/5 of screen
-    int bedY2 = height - bedHeight -130; // 130 is static for the UI Bar at bottom of the screen. 
+    int bedY2 = height - bedHeight - 150; // 130 is static for the UI Bar at bottom of the screen. 
     
 // Top Right Bed
     // white sheets
@@ -54,8 +54,8 @@ void dormDesk(){
     int deskWidth = width/6;  // setting desk width to 1/6 of screen width
     int deskHeight = height/9; // wanted height of desk to be 1/3 of length of bed
     int deskX = width/2 - deskWidth/2; // set desk starting position so desk is centered with screen
-    int deskY = 0; // top desk starts at top edge
-    int deskY2 = height- deskHeight- 130; //bottom desk starts at height of desk above UI bar
+    int deskY = 10; // top desk starts at top edge
+    int deskY2 = height- deskHeight - 140; //bottom desk starts at height of desk above UI bar
 
   //Desks
     stroke(#957627); // lighter brown border for desks

@@ -34,10 +34,12 @@ void updateUI(){
         textSize(15);
         fill(150,0,0);
         for(int i=0; i<toDoList.length; i++){
+            textAlign(LEFT);
+            textSize(18);
             if(i<4){
-                text(toDoList[i], width/2 + (150*i), height-100);
+                text(toDoList[i], width/2 + ((width/11)*i + 25), height-100);
             }else{
-                text(toDoList[i], width/2 + (150*(i-4)), height-50);
+                text(toDoList[i], width/2 + ((width/11)*(i-4) + 25), height-50);
             }
         }
     } 

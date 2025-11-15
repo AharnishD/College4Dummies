@@ -1,11 +1,11 @@
 String[] tasks = {"Attend \n Class", "Commons \n Study", "Commons \n Eat",
- "Attend \n Discussion", "Study In \n Dorm", "Study \n Library", "Work \n Out", "Eat"};
+ "Attend \n Discussion", "Study In \n Dorm", "Study \n Library", "Work \n Out", "Eat","Have \n Fun!"};
 
 
 void generateWeekTodoList(){
     int genNumber;
     if(week < 3){
-        genNumber = 3;
+        genNumber = 8;
     } else if(week < 7) {
         genNumber = 5;
     } else if(week < 11){
@@ -32,7 +32,7 @@ void generateWeekTodoList(){
     int i = 0;
     while (i < genNumber) {
         String temp = tasks[int(random(0, tasks.length))];
-        if(notInToDoList(temp)) {
+        if(notInToDoList(temp)){
             toDoList[i] = temp;
             i++;
         }

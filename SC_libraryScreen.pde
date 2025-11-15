@@ -19,6 +19,5 @@ void library(){
         energyBar.changeEnergy(-10);
         happinessBar.changeHappiness(-5);
         clearTask("Study \n Library");
-
     }
 }
