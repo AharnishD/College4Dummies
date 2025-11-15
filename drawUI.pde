@@ -14,10 +14,22 @@ void updateUI(){
 
         textAlign(LEFT,CENTER);
         textSize(30);
+
         fill(0,150,0);
-        text("Happiness", width/2 - width/2 + 50, height-90);
+        text("Happiness", width/2 - width/2 + 50, height - 90);
+
         fill(150,150,0);
-        text("Energy", width/2 - width/2 + 50, height-55);
+        text("Energy", width/2 - width/2 + 50, height - 55);
+
+        fill(125,249,255);
+        text("Money:  " + "$" + money, int(width/3.5) + 100,height - 55);
+
+        fill(180,45,90);
+        text("GPA:  " + getLetterGrade(), int(width/3.5) + 100, height - 90);
+
+        textAlign(CENTER,CENTER);
+        fill(255);
+        text("Week " + week,width - 130,height - 90);
 
         textSize(15);
         fill(150,0,0);

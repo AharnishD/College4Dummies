@@ -10,6 +10,8 @@ void classLocation(){
 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
+        player.x = int(width/2) - 60;
+        player.y = int(height/2.0) - 60;
     }
 
 

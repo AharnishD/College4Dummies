@@ -10,6 +10,8 @@ public void commons(){
     returnToCampus.display(); 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
+        player.x = int(width/2) - 60;
+        player.y = int(height/2.5) - 60;
     }
 
     commonsStudy.display(); 

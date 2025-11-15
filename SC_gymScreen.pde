@@ -10,6 +10,8 @@ void gym(){
 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
+        player.x = int(width/2) - 60;
+        player.y = int(height/1.5) - 60;
     }
 
     workout.display(); 

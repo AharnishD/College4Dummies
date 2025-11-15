@@ -10,5 +10,7 @@ void uniCenter(){
 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
+        player.x = int(width/3.2) - 60;
+        player.y = int(height/2.0) - 60;
     }
 }

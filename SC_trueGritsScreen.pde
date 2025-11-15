@@ -10,6 +10,8 @@ void trueGrits(){
 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
+        player.x = int(width/1.35) + 60;
+        player.y = int(height/5);
     }
 
     eatFood.display(); 

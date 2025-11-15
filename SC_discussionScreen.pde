@@ -10,6 +10,8 @@ void engineering(){
 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
+        player.x = int(width/7) - 60;
+        player.y = int(height/2.0) - 60;
     }
 
     attendDiscussion.display(); 

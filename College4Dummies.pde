@@ -8,7 +8,7 @@ String[] toDoList = new String[8];
 //Stats  //happy and energy can only be a max of 170
 float happiness = 170;
 float energy = 170;
-int money;
+int money = 30;
 float grade = 100; 
 
 //Game player
@@ -87,14 +87,23 @@ void initThings(){
 
     //buildings
     library = new Button(int(width/6),int(height/6.0),90,90,"AOK. Library");
+
     RAC = new Button(int(width/2),int(height/1.5),80,80,"RAC");
+
     Chesapeake = new Button(int(width/1.5),int(height/6.7),70,70,"Chesapeake\n Hall");
+
     Commons = new Button(width/2,int(height/2.5),60,60,"The\n Commons");
+
     ILSB = new Button(width/2,int(height/2.0),90,70,"Inter\n Disciplinary\n life sciences\n building");
+
     uniCenter = new Button(int(width/3.2),int(height/2.0),73,80,"University\n center");
+
     ENGR = new Button(int(width/7),int(height/2.0),80,80,"Engineering");
+
     wellness = new Button(int(width/1.5),int(height/3.7),70,50,"wellness\n center");
+
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
+
     returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
 
     //start button so the player can enter the game
@@ -103,7 +112,7 @@ void initThings(){
     
     //player stats
     happinessBar = new PlayerStatBar(height-105, happiness,color(0,100,0));
-    energyBar = new PlayerStatBar(height-65,energy,color(125,249,255));
+    energyBar = new PlayerStatBar(height-65,energy,color(150,150,0));
 
     //mechanics buttons
     commonsStudy = new Button(int(width/2.5),int(height/1.8),90,90,"Study");

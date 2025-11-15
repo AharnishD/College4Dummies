@@ -10,6 +10,8 @@ void wellness(){
 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
+        player.x = int(width/1.5) - 60;
+        player.y = int(height/3.7) - 60;
     }
 
 }

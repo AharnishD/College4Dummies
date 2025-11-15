@@ -10,6 +10,8 @@ void dorm(){
 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
+        player.x = int(width/1.5) - 60;
+        player.y = int(height/6.7) - 60;
     }
 
     sleepInDorm.display(); 
