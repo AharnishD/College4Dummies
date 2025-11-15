@@ -12,6 +12,6 @@ void endWeekStats(){
         currentScene = "dorm"; 
         week++; 
         generateWeekTodoList(); 
-        startTimer(60);
+        startTimer(90);
     }
 }
