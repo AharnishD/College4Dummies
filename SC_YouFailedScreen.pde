@@ -1,5 +1,8 @@
-double currentBurnProgress = 0.0;
 
+
+double currentBurnProgress = 0.0; //noise level to remove 
+
+//Perlin noise something... something... something... bla.. bla... bla..... dont want to explain...
 void deathScreen(String message){
 
     frameRate(200);
@@ -16,7 +19,7 @@ void deathScreen(String message){
     text(message, width/2, height/2); 
 
     
-
+    //for loops through perlen noise drawing the picel corasponding to the level at that location 
     for (int y = 0; y < height; y+=4) {
         for (int x = 0; x < width; x+=4) {
 

@@ -1,7 +1,8 @@
+//holds posible to do list activitys 
 String[] tasks = {"Attend \n Class", "Commons \n Study", "Commons \n Eat",
  "Attend \n Discussion", "Study In \n Dorm", "Study \n Library", "Work \n Out", "Eat","Have \n Fun!"};
 
-
+//fills the to do list with things to do. Prevents dupe ones. 
 void generateWeekTodoList(){
     int genNumber;
     if(week < 3){
@@ -62,6 +63,7 @@ boolean notInToDoList(String task){
     return true; 
 }*/
 
+//checks if everything is clear
 boolean checkForWeekEnding(){
     for(int i=0; i<toDoList.length; i++){
         if(!(toDoList[i].equals(" "))){
@@ -71,6 +73,7 @@ boolean checkForWeekEnding(){
     return true; 
 }
 
+//clears task from the to do list if done 
 void clearTask(String task){
     for(int i=0; i<toDoList.length; i++){
         if(toDoList[i].equals(task)){

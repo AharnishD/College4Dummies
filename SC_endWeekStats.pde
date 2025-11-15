@@ -1,13 +1,21 @@
+//displays the stats at the end of the week
 void endWeekStats(){
     background(0); 
     player.displayPlayer();
     player.move();
-    textAlign(LEFT,CENTER);
-    textSize(30);
+    textAlign(CENTER,CENTER);
+    textSize(60);
     fill(255);
-    text("Welcome to the gym", width/2,height/2);
-    nextWeek.display();
+    text("=====End of week report=====", width/2,height/5); 
+    fill(200,0,200);
+    text("Grade: " + getLetterGrade() + " (" + grade + "%)", width/2,height/4); 
+    fill(200,0,0);
+    text("Health: " + happiness, width/2,height/3); 
+    fill(0,200,0);
+    text("Money: " + "$"+money, width/2,height/2.5); 
 
+
+    nextWeek.display(); 
     if(nextWeek.isClicked()){
         currentScene = "dorm"; 
         week++; 

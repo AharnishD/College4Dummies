@@ -1,5 +1,6 @@
 //Yes ik this code is very bad. Cry about it. 
 
+//uses a timer and displays the corasponding picture with the time to draw the startup screen 
 private int alpha = 0;
 private int startupStage =1; 
 private int textOpacity = 0; 

@@ -17,6 +17,8 @@ void dorm(){
     sleepInDorm.display(); 
     sleepInDorm2.display();
 
+    //checks to see if the player has cleared all of the to do list
+    //if it is cleared, allows the player to go to the end of week stat menu 
     studyDorm.display();
     studyDorm2.display();
     if(sleepInDorm.isClicked() || sleepInDorm2.isClicked()){

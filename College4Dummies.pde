@@ -1,20 +1,20 @@
 //Game state
-static String currentScene;
-static int startTime;
+static String currentScene; //what ever this is is the scene that will draw on screen 
+static int startTime;  // the inital start time of the program after fully loading (in mili sec) NOT USED RN
 static int week = 1; //1-15 
-boolean miniGameRunning = false;
-String[] toDoList = new String[8]; 
+boolean miniGameRunning = false; // disables player movement etc if a mini game is running NOT USED RN
+String[] toDoList = new String[8];  //this fills up with what is in the to do list for a player 
 
 //Stats  //happy and energy can only be a max of 170
-float happiness = 170;
-float energy = 170;
-int money = 30;
-float grade = 100; 
+float happiness = 170; //health stat 
+float energy = 170; //energy stat 
+float money = 30.00; //money stat 
+float grade = 100; //grade stat (0-100)
 
 //Game player
-Human player;
+Human player; //holds the current player object 
 //Building Location Buttons
-Button library;
+Button library; 
 Button RAC;
 Button Chesapeake;
 Button Commons; 
@@ -88,7 +88,7 @@ void initThings(){
     //I LOVE YOUUU
     player = new Human("Sara",35,200,200);
 
-    //buildings
+    //initalizes enter building hitboxes 
     library = new Button(int(width/6),int(height/6.0),90,90,"AOK. Library");
 
     RAC = new Button(int(width/2),int(height/1.5),80,80,"RAC");
@@ -141,7 +141,7 @@ void initThings(){
     studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 140,width/6,height / 9,"Study");
 }
 
-//NATHAN YOU DO THIS PART*************************
+//Uses a switch to have the the currentScene be drawn 
 private String changeSceneCheck = "aaaaaaaaaaaaaaaaaaaaaaa";
 void drawScene(String current){
     updateUI();
@@ -193,7 +193,7 @@ void drawScene(String current){
         //This will never show 
     }
 
-    //NATHAN DO THIS PART TOOOO****************
+    //This will detect when a scene is changed and draw the startup functions for the new scene 
     if(!(changeSceneCheck.equals(current))){   
        changeSceneCheck = current;
        background(0);
@@ -212,7 +212,7 @@ void drawScene(String current){
 
 
 
-
+//initalises the assets used in game so they do not need to be loaded later on 
 void loadAssets(){
     teamLogo = loadImage("Assets/teamLogo.png"); 
     gameLogo = loadImage("Assets/gameLogo.png");
@@ -221,14 +221,14 @@ void loadAssets(){
     font = createFont("Jersey10-Regular.ttf", 48);
 }
 
-//stes a scenes GB without covering up UI etc 
+//stes a scenes BG without covering up UI etc 
 void safeBackground(){
     fill(0);
     noStroke();
     rect(0,0,width,height-130);
 }
 
-
+//returns true if the player has any stats too low, returns fale otherwise 
 boolean detectLoss(){
     if(happiness<=0) return true;
     if(energy<=0) return true;
