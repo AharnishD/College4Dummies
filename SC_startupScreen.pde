@@ -2,9 +2,9 @@
 
 //uses a timer and displays the corasponding picture with the time to draw the startup screen 
 private int alpha = 0;
-private int startupStage =1; 
+private int startupStage =2; 
 private int textOpacity = 0; 
-private int timer;
+private int timer = 3;
 
 void startUpScreen(){
 
