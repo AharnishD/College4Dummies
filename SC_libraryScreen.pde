@@ -1,4 +1,5 @@
 void library(){
+    //String test = "true";
     safeBackground();
     player.displayPlayer();
     player.move();
@@ -20,4 +21,18 @@ void library(){
         happinessBar.changeHappiness(-5);
         clearTask("Study \n Library");
     }
+
+    vendingMachineLibrary.display();
 }
+/// THIS IS A TEST
+/*void mousePressed() {
+    boolean vendingClicked = false;
+    if (!vendingClicked && vendingMachineLibrary.isClicked()) {
+        vendingClicked = true;
+        fill(200);
+        rect(int(width/1.8),int(height/1.6),90,90);
+        vendingMachineLibrary1.display();
+        rect(int(width/1.4),int(height/1.6),90,90);
+        vendingMachineLibrary2.display();
+    } 
+}*/

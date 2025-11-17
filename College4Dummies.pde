@@ -46,6 +46,9 @@ Button studyDorm;
 Button studyDorm2;
 
 Button studyLibrary;
+Button vendingMachineLibrary;
+Button vendingMachineLibrary1;
+Button vendingMachineLibrary2;
 
 Button ucParty;
 
@@ -139,6 +142,10 @@ void initThings(){
     studyDorm = new Button(width/2 - (width/6)/2,10,width/6,height/9,"Study");
 
     studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 140,width/6,height / 9,"Study");
+
+    vendingMachineLibrary = new Button(int(width/1.2),int(height/1.8),90,90,"Vending \n Machine");
+    //vendingMachineLibrary1 = new Button(int(width/1.8),int(height/1.6),90,90,"Diet Coke");
+    //vendingMachineLibrary2 = new Button(int(width/1.4),int(height/1.6),90,90,"White \n Monster");
 }
 
 //Uses a switch to have the the currentScene be drawn 

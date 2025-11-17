@@ -21,6 +21,16 @@ void updateUI(){
         fill(150,150,0);
         text("Energy", width/2 - width/2 + 50, height - 55);
 
+
+        //spendMoney(-3.50);
+        if(vendingMachineLibrary.isClicked()){
+            energyBar.changeEnergy(20);
+            spendMoney(-3.50);
+            fill(16,19,60);
+            noStroke();
+            rect(int(width/3.5) + 190,height - 75,50,50);
+        }
+
         fill(125,249,255);
         text("Money:  " + "$" + money, int(width/3.5) + 100,height - 55);
 
@@ -53,7 +63,7 @@ void updateUI(){
                 text(toDoList[i], width/2 + ((width/11)*(i-4) + 25), height-50);
             }
         }
-    } 
+    }
 }
 
 String getLetterGrade(){
@@ -63,6 +73,8 @@ String getLetterGrade(){
     if(grade>=60) return "D"; 
     else return "dammmmmmmm u stupid"; 
 }
+
+
 
 
 
