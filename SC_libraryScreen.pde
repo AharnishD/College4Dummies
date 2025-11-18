@@ -6,7 +6,7 @@ void library(){
     textAlign(CENTER,CENTER);
     textSize(30);
     fill(255);
-    text("Welcome to the livrartyy", width/2,height/2);
+    text("Welcome to the library", width/2,height/2);
    
     returnToCampus.display();
     if(returnToCampus.isClicked()){
