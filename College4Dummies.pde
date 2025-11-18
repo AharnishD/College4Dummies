@@ -146,6 +146,17 @@ void initThings(){
     vendingMachineLibrary = new Button(int(width/1.2),int(height/1.8),90,90,"Vending \n Machine");
     //vendingMachineLibrary1 = new Button(int(width/1.8),int(height/1.6),90,90,"Diet Coke");
     //vendingMachineLibrary2 = new Button(int(width/1.4),int(height/1.6),90,90,"White \n Monster");
+
+
+
+    //From here onwards this is for generating textures
+    
+    //Dorm Rug
+    for(int i = 0; i < 1200; i++){
+        carpetXs[i] = random(0, width);             // chose random location within carpet horizontally
+        carpetYs[i] = random(0, height -130);       // chose random location within carpet vertically
+        strandLengths[i] = random(3, 7);            // random length of lines between 3-7 pixels
+    }
 }
 
 //Uses a switch to have the the currentScene be drawn 
