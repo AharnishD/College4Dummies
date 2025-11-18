@@ -19,7 +19,7 @@ void startUpScreen(){
      alpha += 10; 
    }
    if(timer/1000 == 3){
-      startupStage =2;
+      startupStage = 2;
    }
       
     
@@ -36,8 +36,8 @@ void startUpScreen(){
       textOpacity += 1.5;
     }
     if(timer/1000 == 8){
-      startupStage =3; 
-      alpha=0; 
+      startupStage = 3; 
+      alpha = 0; 
     }
     
   }else if(startupStage==3){ 
