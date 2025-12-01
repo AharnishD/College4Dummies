@@ -16,12 +16,12 @@ public void commons(){
 
     commonsStudy.display(); 
     if(commonsStudy.isClicked()){
-        energyBar.changeEnergy(-10);
+        energyBar.changeEnergy(-15);
         clearTask("Commons \n Study"); 
     }
     commonsEat.display();
     if(commonsEat.isClicked()){
-        energyBar.changeEnergy(10);
+        energyBar.changeEnergy(13);
         clearTask("Commons \n Eat"); 
     }
 }

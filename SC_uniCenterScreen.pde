@@ -11,7 +11,7 @@ void uniCenter(){
     ucParty.display();
     if(studyLibrary.isClicked()){
         energyBar.changeEnergy(-10);
-        happinessBar.changeHappiness(-5);
+        happinessBar.changeHappiness(5);
         clearTask("Have \n Fun!");
     }
 

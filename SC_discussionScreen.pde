@@ -16,8 +16,8 @@ void engineering(){
 
     attendDiscussion.display(); 
     if(attendDiscussion.isClicked()){
-        energyBar.changeEnergy(-10);
-        happinessBar.changeHappiness(-5);
+        energyBar.changeEnergy(-30);
+        happinessBar.changeHappiness(-20);
         clearTask("Attend \n Discussion"); 
     }
 
