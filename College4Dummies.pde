@@ -64,6 +64,7 @@ static public PImage teamLogo;
 static public PImage gameLogo;
 static public PImage playerImg; 
 static public PImage hotBar; 
+static public PImage dormBG;
 static public PFont font;
 
 
@@ -236,6 +237,7 @@ void loadAssets(){
     gameLogo = loadImage("Assets/gameLogo.png");
     playerImg = loadImage("Assets/playerIMG.png");
     hotBar = loadImage("Assets/HD_HotBar.png"); 
+    dormBG = loadImage("Assets/DormScene.png"); 
     font = createFont("Jersey10-Regular.ttf", 48);
 }
 

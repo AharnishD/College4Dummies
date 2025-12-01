@@ -5,25 +5,31 @@ float [] strandLengths = new float [1200];
 void dorm(){
     safeBackground();
 
-    dormRug();
+    //dormRug();
+
+    
     
     sleepInDorm.display(); 
     sleepInDorm2.display();
     studyDorm.display();
     studyDorm2.display();
 
-    dormBed();
-    dormDesk();
+    //dormBed();
+    //dormDesk();
 
     
 
-    player.displayPlayer();
+    
     player.move();
     textAlign(CENTER,CENTER);
     textSize(30);
     fill(255);
     text("Welcome to your dorm", width/2,height/2);
     returnToCampus.display();
+
+    image(dormBG, 0,0, width, height-130);
+
+    player.displayPlayer();
 
     if(returnToCampus.isClicked()){
         currentScene = "campus";
