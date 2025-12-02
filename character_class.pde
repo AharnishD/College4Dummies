@@ -31,14 +31,14 @@ public class Human {
     if (keyPressed) {
       if (keyCode == LEFT || key == 'a') {
         playerLookDir = false;
-        x -= 6;
+        x -= 10;
       } else if (keyCode == RIGHT || key == 'd') {
         playerLookDir = true;
-        x += 6;
+        x += 10;
       } else if (keyCode == UP || key == 'w') {
-        y -= 6;
+        y -= 10;
       } else if (keyCode == DOWN || key == 's') {
-        y += 6;
+        y += 10;
       }
 
     //lines 45-57 ensure the player doesn't go out of bounds

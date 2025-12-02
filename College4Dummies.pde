@@ -140,9 +140,9 @@ void initThings(){
 
     studyLibrary = new Button(int(width/1.8),int(height/1.8),90,90,"Study");
 
-    studyDorm = new Button(width/2 - (width/6)/2,10,width/6,height/9,"Study");
+    studyDorm = new Button(width/2 - (width/5)/2,170,width/6,height/9,"Study");
 
-    studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 140,width/6,height / 9,"Study");
+    studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 280,width/6,height / 9,"Study");
 
     vendingMachineLibrary = new Button(int(width/1.2),int(height/1.8),90,90,"Vending \n Machine");
     //vendingMachineLibrary1 = new Button(int(width/1.8),int(height/1.6),90,90,"Diet Coke");
