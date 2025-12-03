@@ -59,13 +59,18 @@ PlayerStatBar energyBar;
 
 
 
-//Assets
-static public PImage teamLogo;
-static public PImage gameLogo;
-static public PImage playerImg; 
-static public PImage hotBar; 
-static public PImage dormBG;
-static public PFont font;
+//Misc Assets
+    PImage teamLogo;
+    PImage gameLogo;
+    PImage playerImg; 
+    PImage hotBar; 
+    PFont font;
+
+//Scene Assets
+    PImage dormBG;
+    PImage gymBG;
+
+    
 
 
 //makes the environment while loading our assets and initializing our objects and sets the current scene
@@ -233,12 +238,16 @@ void drawScene(String current){
 
 //initalises the assets used in game so they do not need to be loaded later on 
 void loadAssets(){
+    //Misc Assets
     teamLogo = loadImage("Assets/teamLogo.png"); 
     gameLogo = loadImage("Assets/gameLogo.png");
     playerImg = loadImage("Assets/playerIMG.png");
-    hotBar = loadImage("Assets/HD_HotBar.png"); 
-    dormBG = loadImage("Assets/DormScene.png"); 
+    hotBar = loadImage("Assets/HD_HotBar.png");  
     font = createFont("Jersey10-Regular.ttf", 48);
+
+    //Scene Assets
+    dormBG = loadImage("Assets/dormScene.png");
+    gymBG = loadImage("Assets/RAC_Scene.png");
 }
 
 //stes a scenes BG without covering up UI etc 

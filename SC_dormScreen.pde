@@ -3,7 +3,6 @@ float [] carpetYs = new float[1200];
 float [] strandLengths = new float [1200];
 
 void dorm(){
-    safeBackground();
 
     //dormRug();
 
