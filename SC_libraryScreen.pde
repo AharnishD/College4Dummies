@@ -1,6 +1,5 @@
 void library(){
-    //String test = "true";
-    safeBackground();
+    image(libraryBG, 0,0, width, height-130);
     player.displayPlayer();
     player.move();
     textAlign(CENTER,CENTER);

@@ -13,7 +13,7 @@ float grade = 100; //grade stat (0-100)
 
 //Game player
 Human player; //holds the current player object 
-//Building Location Buttons
+//buildings
 Button library; 
 Button RAC;
 Button Chesapeake;
@@ -69,6 +69,8 @@ PlayerStatBar energyBar;
 //Scene Assets
     PImage dormBG;
     PImage gymBG;
+    PImage libraryBG;
+    PImage ucSceneBG;
 
     
 
@@ -248,6 +250,8 @@ void loadAssets(){
     //Scene Assets
     dormBG = loadImage("Assets/dormScene.png");
     gymBG = loadImage("Assets/RAC_Scene.png");
+    libraryBG = loadImage("Assets/libraryScene.png"); 
+    ucSceneBG = loadImage("Assets/ucScene.png"); 
 }
 
 //stes a scenes BG without covering up UI etc 

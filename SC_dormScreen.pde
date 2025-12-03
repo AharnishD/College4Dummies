@@ -18,7 +18,7 @@ void dorm(){
 
     
 
-    
+    image(dormBG, 0,0, width, height-130);
     player.move();
     textAlign(CENTER,CENTER);
     textSize(30);
@@ -26,7 +26,6 @@ void dorm(){
     text("Welcome to your dorm", width/2,height/2);
     returnToCampus.display();
 
-    image(dormBG, 0,0, width, height-130);
 
     player.displayPlayer();
 
