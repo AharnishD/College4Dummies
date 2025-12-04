@@ -49,25 +49,3 @@ void dorm(){
 
 
 }      
-
-   
-void dormRug(){ /// trying to figure out how to freeze this so the texture is there but doesn't update, looks like fuzzy tv now
-
-// base color of carpet
-  noStroke();
-  fill(#CED7DE); // gray pulled from blue hue range
-  rect(0, 0, width, height-130);
-
-// adding texture to carpet
-  stroke(#A2623A); // going with a color in the redish family hoping for a warm light feel
-  strokeWeight(1);
-
-  for (int i = 0; i<1200; i++) { // 1200 possible fibers
-    //float carpetX = random(0, width);  // chose random location within carpet horizontally
-    //float carpetY = random(0, height -130); // chose random location within carpet vertically
-    //float strandLength = random(3, 7); // random length of lines between 3-7 pixels
-  
-    // give short vertical lines to add texture to the base color of carpet
-      line(carpetXs[i], carpetYs[i], carpetXs[i], carpetYs[i] + strandLengths[i]); // makes strands at random locations per the for loop. 
-  }
-}

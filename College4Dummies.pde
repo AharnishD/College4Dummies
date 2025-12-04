@@ -93,6 +93,10 @@ void draw(){
         currentScene = "lose";
     }
     drawScene(currentScene); 
+
+    if(currentScene == "minigame1"){
+        EbenMinigame();
+    }
 }
 
 //initalizes all of our objects
@@ -219,6 +223,9 @@ void drawScene(String current){
     case "lose":
         deathScreen("[You Failed]");
         break;
+    case "minigame1":
+        EbenMinigame();
+        break;
     default:
         //This will never show 
     }
@@ -275,3 +282,13 @@ boolean detectLoss(){
     if(grade<=60) return true;
     return false;
 }   
+
+void randomMinigames(){
+    int gamePick = int(random(0,3));
+    switch(gamePick){
+        case 0:
+        currentScene = "minigame1";
+        EbenMinigame();
+        break;
+    }
+}

@@ -1,4 +1,5 @@
 void classLocation(){
+    safeBackground();
     player.displayPlayer();
     player.move();
     textAlign(CENTER,CENTER);
@@ -20,5 +21,7 @@ void classLocation(){
         energyBar.changeEnergy(-10);
         happinessBar.changeHappiness(-5);
         clearTask("Attend \n Class");
+        randomMinigames();
     }
 }
+
