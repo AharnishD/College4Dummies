@@ -9,7 +9,7 @@ int lastTime = 0;
 //}
 
 //constantly loops removeing 1 from the timer every sec, when it is at 0, runs week end lojic 
-/*void runTimer(){
+void runTimer(){
   if (millis() - lastTime >= 1000) {
     if(time>0){     
       time--;         
@@ -20,5 +20,5 @@ int lastTime = 0;
       time--;
     }
   }
-}*/
+}
   

@@ -15,17 +15,6 @@ void generateWeekTodoList(){
         genNumber = 8;
     }
 
-    /*for(int i = 0; i<genNumber; i++){
-        if(!(checkAndAddToDoListItem(i))) i--;
-    }
-
-
-    for(int i = 0; i<toDoList.length; i++){
-        if(toDoList[i] == null){
-            toDoList[i] = " ";
-        }
-    }*/
-
     for(int i = 0; i < toDoList.length; i++){
         toDoList[i] = " ";
     }

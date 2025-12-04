@@ -60,20 +60,20 @@ PlayerStatBar energyBar;
 
 
 //Misc Assets
-    PImage teamLogo;
-    PImage gameLogo;
-    PImage playerImg; 
-    PImage hotBar; 
-    PFont font;
+PImage teamLogo;
+PImage gameLogo;
+PImage playerImg; 
+PImage hotBar; 
+PFont font;
 
 //Scene Assets
-    PImage dormBG;
-    PImage gymBG;
-    PImage libraryBG;
-    PImage ucSceneBG;
-    PImage wcSceneBG;
-    PImage trueGritsBG;
-    PImage discBG;
+PImage dormBG;
+PImage gymBG;
+PImage libraryBG;
+PImage ucSceneBG;
+PImage wcSceneBG;
+PImage trueGritsBG;
+PImage discBG;
 
 
 
@@ -88,7 +88,7 @@ void setup(){
 
 //draws our scene
 void draw(){
-    //runTimer();
+    runTimer();
     if(detectLoss()){
         currentScene = "lose";
     }
@@ -213,12 +213,12 @@ void drawScene(String current){
     case "trueGrits":
         trueGrits();
         break;
-    //case "endWeekStats":
-        //endWeekStats();
-        //break;
-    //case "lose":
-        //deathScreen("[You Failed]");
-        //break;
+    case "endWeekStats":
+        endWeekStats();
+        break;
+    case "lose":
+        deathScreen("[You Failed]");
+        break;
     default:
         //This will never show 
     }
