@@ -1,5 +1,4 @@
 void classLocation(){
-    safeBackground();
     player.displayPlayer();
     player.move();
     textAlign(CENTER,CENTER);

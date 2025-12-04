@@ -1,6 +1,6 @@
 //Game state
-static String currentScene; //what ever this is is the scene that will draw on screen 
-static int startTime;  // the inital start time of the program after fully loading (in mili sec) NOT USED RN
+String currentScene; //what ever this is is the scene that will draw on screen 
+static  int startTime;  // the inital start time of the program after fully loading (in mili sec) NOT USED RN
 static int week = 1; //1-15 
 boolean miniGameRunning = false; // disables player movement etc if a mini game is running NOT USED RN
 String[] toDoList = new String[8];  //this fills up with what is in the to do list for a player 
@@ -71,8 +71,10 @@ PlayerStatBar energyBar;
     PImage gymBG;
     PImage libraryBG;
     PImage ucSceneBG;
+    PImage wcSceneBG;
+    PImage trueGritsBG;
+    PImage discBG;
 
-    
 
 
 //makes the environment while loading our assets and initializing our objects and sets the current scene
@@ -86,7 +88,7 @@ void setup(){
 
 //draws our scene
 void draw(){
-    runTimer();
+    //runTimer();
     if(detectLoss()){
         currentScene = "lose";
     }
@@ -98,6 +100,9 @@ void initThings(){
     //character
     //I LOVE YOUUU
     player = new Human("Sara",35,200,200);
+
+    //universeal exit button
+    returnToCampus = new Button(int(width/18),height/13,100,100,"Exit");
 
     //initalizes enter building hitboxes 
     library = new Button(int(width/6),int(height/6.0),90,90,"AOK. Library");
@@ -118,7 +123,6 @@ void initThings(){
 
     trueGrits = new Button(int(width/1.35),int(height/5),60,60,"True\n Grits");
 
-    returnToCampus = new Button(int(width/13),height/13,90,90,"Exit");
 
     //start button so the player can enter the game
     start = new Button(int(width/2-45),height/2,90,90,"Start"); 
@@ -142,14 +146,14 @@ void initThings(){
 
     eatFood = new Button(int(width/1.8),int(height/1.8),90,90,"Go Eat");
 
-    sleepInDorm = new Button((width - (width / 6)),20,width/6,(2 * height) / 6,"Go Sleep");
-    sleepInDorm2 = new Button((width - (width / 6)),height - ((2 * height) / 6 ) - 150,width/6,(2 * height) / 6,"Go Sleep");
 
     studyLibrary = new Button(int(width/1.8),int(height/1.8),90,90,"Study");
 
-    studyDorm = new Button(width/2 - (width/5)/2,170,width/6,height/9,"Study");
-
-    studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 280,width/6,height / 9,"Study");
+    //FOR DORM SCENE
+    sleepInDorm = new Button((width - (int(width / 4.5))),int(height/4.8),width/6,(2 * height) / 6,"Go Sleep"); //done
+    sleepInDorm2 = new Button(width/15,height-int((height/2.5)),int(width/4),height/6,"Go Sleep");
+    studyDorm = new Button(width/2 - (width/7)/2,170,width/5,height/6,"Study"); //done
+    studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 280,width/5,height / 8,"Study"); //done
 
     vendingMachineLibrary = new Button(int(width/1.2),int(height/1.8),90,90,"Vending \n Machine");
     //vendingMachineLibrary1 = new Button(int(width/1.8),int(height/1.6),90,90,"Diet Coke");
@@ -200,7 +204,7 @@ void drawScene(String current){
     case "uniCenter":
         uniCenter();
         break;
-    case "engeneering":
+    case "engineering":
         engineering();
         break;
     case "wellness":
@@ -209,12 +213,12 @@ void drawScene(String current){
     case "trueGrits":
         trueGrits();
         break;
-    case "endWeekStats":
-        endWeekStats();
-        break;
-    case "lose":
-        deathScreen("[You Failed]");
-        break;
+    //case "endWeekStats":
+        //endWeekStats();
+        //break;
+    //case "lose":
+        //deathScreen("[You Failed]");
+        //break;
     default:
         //This will never show 
     }
@@ -248,10 +252,13 @@ void loadAssets(){
     font = createFont("Jersey10-Regular.ttf", 48);
 
     //Scene Assets
-    dormBG = loadImage("Assets/dormScene.png");
+    dormBG = loadImage("Assets/DormScene.png");
     gymBG = loadImage("Assets/RAC_Scene.png");
     libraryBG = loadImage("Assets/libraryScene.png"); 
     ucSceneBG = loadImage("Assets/ucScene.png"); 
+    wcSceneBG = loadImage("Assets/wcScene.png");
+    trueGritsBG = loadImage("Assets/trueGritsScene.png");
+    discBG = loadImage("Assets/discScene.png");
 }
 
 //stes a scenes BG without covering up UI etc 

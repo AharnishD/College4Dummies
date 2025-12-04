@@ -52,16 +52,6 @@ boolean notInToDoList(String task){
 }
 
 
-/*boolean checkAndAddToDoListItem(int index){
-    String temp = tasks[int(random(0, tasks.length))];
-    for(int e=0; e<toDoList.length; e++){
-        if(temp.equals(toDoList[e])){
-            return false;
-        }
-    }
-    toDoList[index] = temp;
-    return true; 
-}*/
 
 //checks if everything is clear
 boolean checkForWeekEnding(){

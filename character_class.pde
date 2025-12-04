@@ -43,19 +43,33 @@ public class Human {
 
     //lines 45-57 ensure the player doesn't go out of bounds
     // Left or right wall
-    if (x < 10) {
-      x = 10;
-    } else if (x > width - 80) {
-      x = width - 80;
-    }
+      if (x < 10) {
+        x = 10;
+      } else if (x > width - 80) {
+        x = width - 80;
+      }
 
     // Top or bottom wall
-    if (y < 10) {
-      y = 10;
-    } else if (y > height - 230) {
-      y = height - 230;
+      if (y < 10) {
+        y = 10;
+      } else if (y > height - 230) {
+        y = height - 230;
+      }
+
+      if(currentScene == "library" || currentScene == "RAC" || currentScene == "dorm" || currentScene == "commons" 
+      || currentScene == "classLocation" || currentScene == "uniCenter" || currentScene == "engineering" || currentScene == "wellness" || currentScene == "trueGrits") {
+        if (keyCode == LEFT || key == 'a') {
+          playerLookDir = false;
+          x -= 50;
+        } else if (keyCode == RIGHT || key == 'd') {
+          playerLookDir = true;
+          x += 50;
+        } else if (keyCode == UP || key == 'w') {
+          y -= 50;
+        } else if (keyCode == DOWN || key == 's') {
+          y += 50;
+        }
+      }
     }
   }
-}
-
 }

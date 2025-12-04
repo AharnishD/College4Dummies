@@ -41,7 +41,7 @@ void campus(){
     uniCenter.display();
 
     if(ENGR.isClicked()){
-        currentScene = "engeneering";
+        currentScene = "engineering";
         returnToCampus.display();
     }
     ENGR.display();

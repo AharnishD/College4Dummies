@@ -1,5 +1,5 @@
 public void commons(){
-    safeBackground();
+    image(dormBG, 0,0, width, height-130);
     player.displayPlayer();
     player.move();
     textAlign(CENTER,CENTER);

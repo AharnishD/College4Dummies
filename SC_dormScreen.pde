@@ -4,27 +4,20 @@ float [] strandLengths = new float [1200];
 
 void dorm(){
 
-    //dormRug();
-
-    
-    
     sleepInDorm.display(); 
     sleepInDorm2.display();
     studyDorm.display();
     studyDorm2.display();
-
-    //dormBed();
-    //dormDesk();
-
-    
+    returnToCampus.display();
 
     image(dormBG, 0,0, width, height-130);
+
     player.move();
     textAlign(CENTER,CENTER);
     textSize(30);
     fill(255);
     text("Welcome to your dorm", width/2,height/2);
-    returnToCampus.display();
+    
 
 
     player.displayPlayer();
@@ -35,13 +28,9 @@ void dorm(){
         player.y = int(height/6.7) - 60;
     }
 
-    //sleepInDorm.display(); 
-    //sleepInDorm2.display();
-
     //checks to see if the player has cleared all of the to do list
     //if it is cleared, allows the player to go to the end of week stat menu 
-    //studyDorm.display();
-    //studyDorm2.display();
+ 
     if(sleepInDorm.isClicked() || sleepInDorm2.isClicked()){
         if(checkForWeekEnding()){
             currentScene = "endWeekStats";
