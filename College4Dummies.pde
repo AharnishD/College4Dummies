@@ -76,7 +76,7 @@ PImage trueGritsBG;
 PImage discBG;
 
 
-
+int gamePick = int(random(0,1));
 //makes the environment while loading our assets and initializing our objects and sets the current scene
 void setup(){
     startTime = millis(); //This NEEDS to be first   
@@ -92,11 +92,9 @@ void draw(){
     if(detectLoss()){
         currentScene = "lose";
     }
+
     drawScene(currentScene); 
 
-    if(currentScene == "minigame1"){
-        EbenMinigame();
-    }
 }
 
 //initalizes all of our objects
@@ -160,19 +158,9 @@ void initThings(){
     studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 280,width/5,height / 8,"Study"); //done
 
     vendingMachineLibrary = new Button(int(width/1.2),int(height/1.8),90,90,"Vending \n Machine");
-    //vendingMachineLibrary1 = new Button(int(width/1.8),int(height/1.6),90,90,"Diet Coke");
-    //vendingMachineLibrary2 = new Button(int(width/1.4),int(height/1.6),90,90,"White \n Monster");
 
 
-
-    //From here onwards this is for generating textures
-    
-    //Dorm Rug
-    for(int i = 0; i < 1200; i++){
-        carpetXs[i] = random(0, width);             // chose random location within carpet horizontally
-        carpetYs[i] = random(0, height -130);       // chose random location within carpet vertically
-        strandLengths[i] = random(3, 7);            // random length of lines between 3-7 pixels
-    }
+    initGtMinigame();
 }
 
 //Uses a switch to have the the currentScene be drawn 
@@ -225,6 +213,9 @@ void drawScene(String current){
         break;
     case "minigame1":
         EbenMinigame();
+        break;
+    case "minigame2":
+        gtMinigame();
         break;
     default:
         //This will never show 
@@ -284,11 +275,17 @@ boolean detectLoss(){
 }   
 
 void randomMinigames(){
-    int gamePick = int(random(0,3));
+    //int gamePick = int(random(0,1));
     switch(gamePick){
         case 0:
         currentScene = "minigame1";
         EbenMinigame();
         break;
+        case 1:
+        currentScene = "minigame2";
+        gtMinigame();
+        break;
+        default:
+
     }
 }
