@@ -1,17 +1,17 @@
 void uniCenter(){
+    returnToCampus.display();
+    ucParty.display();
+
     image(ucSceneBG, 0,0, width, height-130);
+    
+    
     player.displayPlayer();
     player.move();
-    textAlign(CENTER,CENTER);
-    textSize(30);
-    fill(255);
-    text("Welcome to the uni center", width/2,height/2);
-    returnToCampus.display();
 
-    ucParty.display();
-    if(studyLibrary.isClicked()){
-        energyBar.changeEnergy(-10);
-        happinessBar.changeHappiness(5);
+
+    if(ucParty.isClicked() && currentScene == "uniCenter"){
+        energyBar.changeEnergy(-70);
+        happinessBar.changeHappiness(30);
         clearTask("Have \n Fun!");
     }
 

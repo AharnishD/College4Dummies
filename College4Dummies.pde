@@ -50,6 +50,8 @@ Button vendingMachineLibrary;
 Button vendingMachineLibrary1;
 Button vendingMachineLibrary2;
 
+Button wcGetHealthy;
+
 Button ucParty;
 
 //player stat bars
@@ -74,6 +76,8 @@ PImage ucSceneBG;
 PImage wcSceneBG;
 PImage trueGritsBG;
 PImage discBG;
+PImage ilsbBG;
+PImage commonsBG;
 
 
 int gamePick = int(random(0,1));
@@ -135,21 +139,23 @@ void initThings(){
     energyBar = new PlayerStatBar(height-65,energy,color(150,150,0));
 
     //mechanics 
-    ucParty = new Button(int(width/1.8),int(height/1.8),90,90,"Have \n Fun!");
+    wcGetHealthy = new Button(int(width/2.7),int(height/2.8),500,200,"Get\n Healthy");
 
-    commonsStudy = new Button(int(width/2.5),int(height/1.8),90,90,"Study");
-    commonsEat = new Button(int(width/1.8),int(height/1.8),90,90,"Eat");
+    ucParty = new Button(30,int(height/2.5),width-30,int(height/2.3),"Have \n Fun!");
 
-    attendClass = new Button(int(width/1.8),int(height/1.5),90,90,"Go To Class");
+    commonsStudy = new Button(0,int(height/2),width,int(height/3),"Study");
+    commonsEat = new Button(int(width/8),int(height/10),int(width/1.3),250,"Eat");
 
-    workout = new Button(int(width/1.8),int(height/1.8),90,90,"Lift weights");
+    attendClass = new Button(0,int(height/1.8),width,int(height/3.3),"Go To Class");
 
-    attendDiscussion = new Button(int(width/1.8),int(height/1.8),90,90,"Go to Discussion");
+    workout = new Button(int(width/1.4),int(height/4),int(width/4.7),height/2,"Lift weights");
 
-    eatFood = new Button(int(width/1.8),int(height/1.8),90,90,"Go Eat");
+    attendDiscussion = new Button(int(width/2.5),int(height/1.8),350,200,"Go to Discussion");
+
+    eatFood = new Button(int(width/3.6),int(height/5.2),600,120,"Go Eat");
 
 
-    studyLibrary = new Button(int(width/1.8),int(height/1.8),90,90,"Study");
+
 
     //FOR DORM SCENE
     sleepInDorm = new Button((width - (int(width / 4.5))),int(height/4.8),width/6,(2 * height) / 6,"Go Sleep"); //done
@@ -157,8 +163,9 @@ void initThings(){
     studyDorm = new Button(width/2 - (width/7)/2,170,width/5,height/6,"Study"); //done
     studyDorm2 = new Button(width/2 - (width/6)/2,height - (height/9) - 280,width/5,height / 8,"Study"); //done
 
-    vendingMachineLibrary = new Button(int(width/1.2),int(height/1.8),90,90,"Vending \n Machine");
-
+    //FOR LIBRARY SCENE
+    vendingMachineLibrary = new Button(int(width/1.22),int(height/2.5),200,250,"Vending \n Machine");
+    studyLibrary = new Button(int(width/1.8),int(height/1.6),300,200,"Study");
 
     initGtMinigame();
 }
@@ -257,6 +264,8 @@ void loadAssets(){
     wcSceneBG = loadImage("Assets/wcScene.png");
     trueGritsBG = loadImage("Assets/trueGritsScene.png");
     discBG = loadImage("Assets/discScene.png");
+    ilsbBG = loadImage("Assets/ilsbScene.png");
+    commonsBG = loadImage("Assets/commonsScene.png");
 }
 
 //stes a scenes BG without covering up UI etc 
@@ -275,7 +284,7 @@ boolean detectLoss(){
 }   
 
 void randomMinigames(){
-    //int gamePick = int(random(0,1));
+    int gamePick = int(random(0,1));
     switch(gamePick){
         case 0:
         currentScene = "minigame1";

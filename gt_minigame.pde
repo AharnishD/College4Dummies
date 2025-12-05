@@ -57,7 +57,7 @@ void gtMinigame() {
   if (misses >= 10) {
     gameOver();
     //noLoop();  // stop updating if you want
-    currentScene = "classLocation";
+    currentScene = "engineering";
   }
 }
 

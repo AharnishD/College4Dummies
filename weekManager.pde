@@ -1,6 +1,6 @@
 //holds posible to do list activitys 
 String[] tasks = {"Attend \n Class", "Commons \n Study", "Commons \n Eat",
- "Attend \n Discussion", "Study In \n Dorm", "Study \n Library", "Work \n Out", "Eat","Have \n Fun!"};
+ "Attend \n Discussion", "Study In \n Dorm", "Study \n Library", "Work \n Out", "Eat","Have \n Fun!", "You're \n Sick!"};
 
 //fills the to do list with things to do. Prevents dupe ones. 
 void generateWeekTodoList(){
@@ -24,6 +24,10 @@ void generateWeekTodoList(){
         String temp = tasks[int(random(0, tasks.length))];
         if(notInToDoList(temp)){
             toDoList[i] = temp;
+            if(toDoList[i] == "You're \n Sick!"){
+                happinessBar.changeHappiness(-75);
+                energyBar.changeEnergy(-60);
+            } 
             i++;
         }
     }
