@@ -1,6 +1,6 @@
 //Game state
 String currentScene; //what ever this is is the scene that will draw on screen 
-static  int startTime;  // the inital start time of the program after fully loading (in mili sec) NOT USED RN
+static int startTime;  // the inital start time of the program after fully loading (in mili sec) NOT USED RN
 static int week = 1; //1-15 
 boolean miniGameRunning = false; // disables player movement etc if a mini game is running NOT USED RN
 String[] toDoList = new String[8];  //this fills up with what is in the to do list for a player 
@@ -78,6 +78,7 @@ PImage trueGritsBG;
 PImage discBG;
 PImage ilsbBG;
 PImage commonsBG;
+PImage campusBG;
 
 
 int gamePick = int(random(0,1));
@@ -231,7 +232,7 @@ void drawScene(String current){
     //This will detect when a scene is changed and draw the startup functions for the new scene 
     if(!(changeSceneCheck.equals(current))){   
        changeSceneCheck = current;
-       background(0);
+       image(campusBG, 0,0, width, height-130);
        drawUI();
 
        switch (current) {
@@ -252,7 +253,7 @@ void loadAssets(){
     //Misc Assets
     teamLogo = loadImage("Assets/teamLogo.png"); 
     gameLogo = loadImage("Assets/gameLogo.png");
-    playerImg = loadImage("Assets/playerIMG.png");
+    playerImg = loadImage("Assets/smallRetriever.png");
     hotBar = loadImage("Assets/HD_HotBar.png");  
     font = createFont("Jersey10-Regular.ttf", 48);
 
@@ -266,6 +267,8 @@ void loadAssets(){
     discBG = loadImage("Assets/discScene.png");
     ilsbBG = loadImage("Assets/ilsbScene.png");
     commonsBG = loadImage("Assets/commonsScene.png");
+    campusBG = loadImage("Assets/campusScene.png");
+    
 }
 
 //stes a scenes BG without covering up UI etc 
@@ -283,18 +286,3 @@ boolean detectLoss(){
     return false;
 }   
 
-void randomMinigames(){
-    int gamePick = int(random(0,1));
-    switch(gamePick){
-        case 0:
-        currentScene = "minigame1";
-        EbenMinigame();
-        break;
-        case 1:
-        currentScene = "minigame2";
-        gtMinigame();
-        break;
-        default:
-
-    }
-}

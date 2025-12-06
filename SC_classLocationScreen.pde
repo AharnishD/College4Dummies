@@ -21,7 +21,15 @@ void classLocation(){
         energyBar.changeEnergy(-10);
         happinessBar.changeHappiness(-5);
         clearTask("Attend \n Class");
-        randomMinigames();
+        
+        int gameChance = int(random(0,2));
+        if (gameChance == 1){
+            currentScene = "minigame2";
+            gtMinigame();
+        } else {
+            currentScene = "minigame1";
+            EbenMinigame();
+        }
     }
 }
 

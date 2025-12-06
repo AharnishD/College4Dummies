@@ -57,7 +57,10 @@ void gtMinigame() {
   if (misses >= 10) {
     gameOver();
     //noLoop();  // stop updating if you want
-    currentScene = "engineering";
+    currentScene = "classLocation";
+  }
+  if (gtScore == 20) {
+    currentScene = "classLocation";
   }
 }
 
@@ -66,8 +69,8 @@ void drawPlayer() {
   ellipse(playerX, playerY, playerSize, playerSize);
 
   if (keyPressed) {
-    if (key == 'a')  playerX -= 7;
-    if (key == 'd') playerX += 7;
+    if (key == 'a')  playerX -= 10;
+    if (key == 'd') playerX += 10;
   }
 
   playerX = constrain(playerX, playerSize/2, width - playerSize/2);
@@ -101,6 +104,18 @@ void gameOver() {
   fill(255);
   textSize(30);
   text("Final Score: " + gtScore, width/2, height/2 + 30);
+
+  if(gtScore >= 18){
+    grade = 93;
+  }else if(gtScore >= 16 && gtScore < 18){
+    grade = 80;
+  }else if(gtScore >= 14 && gtScore < 16){
+    grade = 70;
+  }else{
+    grade = 60;
+  }
+
   gtScore = 0;
   misses = 0;
+
 }

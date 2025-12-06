@@ -46,7 +46,7 @@ void EbenMinigame() {
   if (obstacleX < -20) {
     obstacleX = 400;
     ebenScore++;
-    if (ebenScore >= 5) {
+    if (ebenScore == 20) {
       dead = true;
     }
   }
@@ -57,6 +57,15 @@ void EbenMinigame() {
 
   // Collision detection
   if (obstacleX < 70 && obstacleX > 30 && y > 240) {
+    if(ebenScore >= 18){
+      grade = 93;
+    }else if(ebenScore >= 16 && ebenScore < 18){
+      grade = 80;
+    }else if(ebenScore >= 14 && ebenScore < 16){
+      grade = 70;
+    }else{
+      grade = 60;
+    }
     dead = true;
   }
 

@@ -21,7 +21,15 @@ void engineering(){
         energyBar.changeEnergy(-30);
         happinessBar.changeHappiness(-20);
         clearTask("Attend \n Discussion"); 
-        randomMinigames();
+
+        int gameChance = int(random(0,2));
+        if (gameChance == 1){
+            currentScene = "minigame2";
+            gtMinigame();
+        } else {
+            currentScene = "minigame1";
+            EbenMinigame();
+        }
     }
 
 }

@@ -6,13 +6,6 @@ void endWeekStats(){
     textAlign(CENTER,CENTER);
     textSize(60);
     fill(255);
-    /*text("=====End of week report=====", width/2,height/5); 
-    fill(200,0,200);
-    text("Grade: " + getLetterGrade() + " (" + grade + "%)", width/2,height/4); 
-    fill(200,0,0);
-    text("Health: " + happiness, width/2,height/3); 
-    fill(0,200,0);
-    text("Money: " + "$"+money, width/2,height/2.5);*/
     
     //  ADD WEEK SYSTEM WHERE IT DISPLAYS END OF NORMAL WEEK, MIDTERM REPORT, FINAL - AHARNISH WILL DO
     if(week < 8){
@@ -46,6 +39,5 @@ void endWeekStats(){
         currentScene = "dorm"; 
         week++; 
         generateWeekTodoList(); 
-        //startTimer(90);
     }
 }
