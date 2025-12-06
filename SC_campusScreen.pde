@@ -1,7 +1,6 @@
 //Draws the campus layout of UMBC 
 void campus(){
-    //image(campusBG, 0,0, width, height-130); 
-    background(0);
+    image(campusBG, 0,0, width, height-130); 
     player.move();
     player.displayPlayer();
 

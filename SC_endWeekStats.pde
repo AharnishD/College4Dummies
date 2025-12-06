@@ -38,6 +38,8 @@ void endWeekStats(){
     if(nextWeek.isClicked()){
         currentScene = "dorm"; 
         week++; 
+
+        startTimer(200);
         generateWeekTodoList(); 
     }
 }

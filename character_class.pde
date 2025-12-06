@@ -57,7 +57,8 @@ public class Human {
       }
 
       if(currentScene == "library" || currentScene == "RAC" || currentScene == "dorm" || currentScene == "commons" 
-      || currentScene == "classLocation" || currentScene == "uniCenter" || currentScene == "engineering" || currentScene == "wellness" || currentScene == "trueGrits") {
+      || currentScene == "classLocation" || currentScene == "uniCenter" || currentScene == "engineering" || currentScene == "wellness" 
+      || currentScene == "trueGrits" || currentScene == "campus"){
         if (keyCode == LEFT || key == 'a') {
           playerLookDir = false;
           x -= 50;
