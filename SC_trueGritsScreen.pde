@@ -1,3 +1,5 @@
+//draws the true grits layout 
+
 void trueGrits(){
     returnToCampus.display();
     eatFood.display(); 

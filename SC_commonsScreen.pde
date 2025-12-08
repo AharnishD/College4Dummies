@@ -1,3 +1,4 @@
+//draws the commons layout 
 public void commons(){
     returnToCampus.display();
     commonsEat.display();

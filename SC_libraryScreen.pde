@@ -1,3 +1,5 @@
+//draws the library layout 
+
 void library(){
     studyLibrary.display();
     vendingMachineLibrary.display();

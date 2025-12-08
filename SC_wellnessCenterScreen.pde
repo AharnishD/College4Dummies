@@ -1,3 +1,5 @@
+//draws the wellness center layout 
+
 void wellness(){
     returnToCampus.display();
     wcGetHealthy.display();
@@ -20,3 +22,4 @@ void wellness(){
     }
     exitDoor();
 }
+

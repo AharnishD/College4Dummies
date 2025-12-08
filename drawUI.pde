@@ -1,5 +1,5 @@
 
-
+//draws the UI 
 void drawUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions" && currentScene != "endWeekStats"){
         image(hotBar, 15, height-130, width, 450); 
@@ -7,6 +7,7 @@ void drawUI(){
     } 
 }
 
+//updates stats on the bar 
 void updateUI(){
     if(currentScene != "startup" && currentScene != "youfailed" && currentScene != "youwin" && currentScene != "directions" && currentScene != "endWeekStats"){
         happinessBar.drawBar(happiness); 
@@ -66,6 +67,7 @@ void updateUI(){
     }
 }
 
+//converts number grade to letter grade 
 String getLetterGrade(){
     if(grade>=90) return "A";
     if(grade>=80) return "B";

@@ -1,3 +1,4 @@
+//draws the classroom layout 
 void classLocation(){
     returnToCampus.display();
     attendClass.display();

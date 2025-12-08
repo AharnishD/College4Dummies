@@ -1,3 +1,5 @@
+//draws the uni center layout 
+
 void uniCenter(){
     returnToCampus.display();
     ucParty.display();

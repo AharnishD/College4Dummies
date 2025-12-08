@@ -1,3 +1,6 @@
+//Displays directions for user 
+
+//Text for directions 
 String directions = "Use [W] [A] [S] [D] and the [ARROW] keys to move around.\nMove your player to a location and left-click your mouse to enter.\nIn each location you can chose an option to change your stats.\nStats are Health, Energy, Money, and Grade.\nThere are random \"challenges\" that you need to complete.\nyou need to survive 15 weeks, if any stats hits 0..."; 
 
 void directions(){

@@ -1,3 +1,5 @@
+//draws the gym layout 
+
 void gym(){
 
     returnToCampus.display();

@@ -1,3 +1,5 @@
+////draws the dorm room layout 
+
 float [] carpetXs = new float[1200];
 float [] carpetYs = new float[1200];
 float [] strandLengths = new float [1200];

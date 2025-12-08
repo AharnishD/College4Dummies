@@ -1,3 +1,4 @@
+//draws the engenerring building layout 
 void engineering(){
     returnToCampus.display();
     attendDiscussion.display(); 
