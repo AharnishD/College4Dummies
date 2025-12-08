@@ -50,6 +50,8 @@ public class PlayerStatBar{
         delay(200);
     }
 }
+
+//method to spend money and ensure it doesn't go negative
 void spendMoney(float amount){
     money += amount;
     if(money < 0.00){

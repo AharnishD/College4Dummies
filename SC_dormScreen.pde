@@ -5,15 +5,17 @@ float [] carpetYs = new float[1200];
 float [] strandLengths = new float [1200];
 
 void dorm(){
-
+    //displays buttons
     sleepInDorm.display(); 
     sleepInDorm2.display();
     studyDorm.display();
     studyDorm2.display();
     returnToCampus.display();
 
+    //background image for the dorm
     image(dormBG, 0,0, width, height-130);
 
+    //moves character and displays them over backgound
     player.move();
     textAlign(CENTER,CENTER);
     textSize(30);
@@ -21,7 +23,7 @@ void dorm(){
     text("Welcome to your dorm", width/2,height/2);
     
 
-
+    //displays the player and allows them to move over background
     player.displayPlayer();
 
     if(returnToCampus.isClicked()){

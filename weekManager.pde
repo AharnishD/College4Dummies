@@ -2,7 +2,7 @@
 String[] tasks = {"Attend \n Class", "Commons \n Study", "Commons \n Eat",
  "Attend \n Discussion", "Study In \n Dorm", "Study \n Library", "Work \n Out", "Eat","Have \n Fun!", "You're \n Sick!"};
 
-//fills the to do list with things to do. Prevents dupe ones. 
+//fills the to do list with things to do and prevents duplicate entries. 
 void generateWeekTodoList(){
     int genNumber;
     if(week < 3){
@@ -35,6 +35,7 @@ void generateWeekTodoList(){
 
 }
 
+//checks if task is already in to do list
 boolean notInToDoList(String task){
     for(int i = 0; i < toDoList.length;i++){
         if(task.equals(toDoList[i])){

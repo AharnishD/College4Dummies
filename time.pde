@@ -1,8 +1,6 @@
+//global variables
 int time = -1;
 int lastTime = 0;
-
-
-
 //sets the time to what you want causeing it to run, setTime needs to be > 0
 void startTimer(int setTime){
   time = setTime; 

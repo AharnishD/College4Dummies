@@ -7,9 +7,6 @@ public class Human {
   color shirtColor;
   boolean playerLookDir = true;  // true = right, false = left 
 
-  // Arm animation variables (optional for future use)
-  int armOffset = 0;
-  int armSpeed = 2;
 
   //constructor
   public Human(String name, int age, int x, int y) {
@@ -41,7 +38,7 @@ public class Human {
         y += 10;
       }
 
-    //lines 45-57 ensure the player doesn't go out of bounds
+    //ensure the player doesn't go out of bounds
     // Left or right wall
       if (x < 10) {
         x = 10;

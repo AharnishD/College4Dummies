@@ -53,10 +53,9 @@ void gtMinigame() {
   }
 
   drawHUD();
-
+  // Ends the game if the player has missed 10 stars or reached a score of 20
   if (misses >= 10) {
     gameOver();
-    //noLoop();  // stop updating if you want
     currentScene = "classLocation";
   }
   if (gtScore == 20) {
@@ -64,6 +63,7 @@ void gtMinigame() {
   }
 }
 
+//draws the player and allows them to move left and right
 void drawPlayer() {
   fill(100, 200, 255);
   ellipse(playerX, playerY, playerSize, playerSize);
@@ -76,11 +76,13 @@ void drawPlayer() {
   playerX = constrain(playerX, playerSize/2, width - playerSize/2);
 }
 
+//draws what the character needs to catch
 void drawStar(int i) {
   fill(255, 220, 0);
   ellipse(starX[i], starY[i], starSize, starSize);
 }
 
+//draws the hud for the minigame
 void drawHUD() {
   fill(255);
   textSize(20);
@@ -88,12 +90,14 @@ void drawHUD() {
   text("Misses: " + misses + "/10", 10, 50);
 }
 
+//resets the star to the top of the screen at a random x position
 void resetStar(int i) {
   starX[i] = random(starSize, width - starSize);
   starY[i] = random(-300, -50);
   starSpeed[i] = random(3, 7);
 }
 
+//displays the game over screen with the player's final score and updates grade
 void gameOver() {
   background(0);
   fill(255, 100, 100);

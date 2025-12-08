@@ -3,6 +3,7 @@
 //Text for directions 
 String directions = "Use [W] [A] [S] [D] and the [ARROW] keys to move around.\nMove your player to a location and left-click your mouse to enter.\nIn each location you can chose an option to change your stats.\nStats are Health, Energy, Money, and Grade.\nThere are random \"challenges\" that you need to complete.\nyou need to survive 15 weeks, if any stats hits 0..."; 
 
+//main directions display function
 void directions(){
     background(0);
     player.displayPlayer();
@@ -17,6 +18,7 @@ void directions(){
     text("You Fail", width/2, 300); 
     start.display();
 
+    //starts you off in the dorm and generates your todo list for the week
     if(start.isClicked()){
         generateWeekTodoList(); 
         currentScene = "dorm";
