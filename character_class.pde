@@ -45,15 +45,15 @@ public class Human {
     // Left or right wall
       if (x < 10) {
         x = 10;
-      } else if (x > width - 80) {
-        x = width - 80;
+      } else if (x > width - 100) {
+        x = width - 100;
       }
 
     // Top or bottom wall
       if (y < 10) {
         y = 10;
-      } else if (y > height - 230) {
-        y = height - 230;
+      } else if (y > height - 260) {
+        y = height - 260;
       }
 
       if(currentScene == "library" || currentScene == "RAC" || currentScene == "dorm" || currentScene == "commons" 

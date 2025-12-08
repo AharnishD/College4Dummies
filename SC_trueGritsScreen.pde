@@ -18,7 +18,7 @@ void trueGrits(){
         happinessBar.changeHappiness(10);
         clearTask("Eat"); 
     }
-    
+    exitDoor();
 }
 
 

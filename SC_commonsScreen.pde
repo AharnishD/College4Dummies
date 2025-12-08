@@ -26,6 +26,7 @@ public void commons(){
         happinessBar.changeHappiness(7);
         clearTask("Commons \n Eat"); 
     }
+    exitDoor();
 }
 
 

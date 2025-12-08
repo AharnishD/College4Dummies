@@ -46,6 +46,4 @@ void dorm(){
         happinessBar.changeHappiness(-20);
         clearTask("Study In \n Dorm"); 
     }
-
-
 }      

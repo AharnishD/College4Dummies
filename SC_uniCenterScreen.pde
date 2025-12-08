@@ -20,4 +20,5 @@ void uniCenter(){
         player.x = int(width/3.2) - 60;
         player.y = int(height/2.0) - 60;
     }
+    exitDoor();
 }

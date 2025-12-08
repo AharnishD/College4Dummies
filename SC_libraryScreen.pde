@@ -20,4 +20,5 @@ void library(){
         happinessBar.changeHappiness(-15);
         clearTask("Study \n Library");
     }
+    exitDoor();
 }

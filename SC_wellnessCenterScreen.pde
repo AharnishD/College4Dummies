@@ -18,5 +18,5 @@ void wellness(){
         happinessBar.changeHappiness(45);
         clearTask("You're \n Sick!");
     }
-
+    exitDoor();
 }

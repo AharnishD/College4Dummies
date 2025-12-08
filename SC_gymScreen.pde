@@ -20,6 +20,5 @@ void gym(){
         happinessBar.changeHappiness(5);
         clearTask("Work \n Out");
     }
-
-
+    exitDoor();
 }

@@ -31,5 +31,7 @@ void classLocation(){
             EbenMinigame();
         }
     }
+
+    exitDoor();
 }
 
